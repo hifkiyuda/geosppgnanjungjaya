@@ -6,9 +6,10 @@ import { Data } from "./Data";
 interface StatsProps {
   resultPosyandu: ResultPosyandu;
   resultSekolah: ResultSekolah;
+  guru: number;
 }
 
-export const Stats = ({ resultPosyandu, resultSekolah }: StatsProps) => {
+export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
   return (
     <Card>
       <CardContent className="grid gap-4 sm:gap-6">
@@ -30,6 +31,7 @@ export const Stats = ({ resultPosyandu, resultSekolah }: StatsProps) => {
           <Data label="Balita" value={resultPosyandu.balita} />
           <Data label="Ibu Hamil" value={resultPosyandu.bumil} />
           <Data label="Ibu Menyusui" value={resultPosyandu.busui} />
+          <Data label="Guru" value={guru} />
         </div>
       </CardContent>
     </Card>

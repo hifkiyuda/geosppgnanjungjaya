@@ -52,6 +52,8 @@ export default function Home() {
     }
   );
 
+  const guru = sekolah.reduce((sum, s) => sum + s.total_guru, 0);
+
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
@@ -64,6 +66,7 @@ export default function Home() {
           priority
         />
         <Prose>
+          <p>Minggu 1 - 12 Januari 2026</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -76,8 +79,13 @@ export default function Home() {
           resultSekolah={resultSekolah}
           totalS={sekolah.length}
           totalP={posyandu.length}
+          guru={guru}
         />
-        <Stats resultPosyandu={resultPosyandu} resultSekolah={resultSekolah} />
+        <Stats
+          resultPosyandu={resultPosyandu}
+          resultSekolah={resultSekolah}
+          guru={guru}
+        />
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>

@@ -7,6 +7,7 @@ interface TotalProps {
   resultSekolah: ResultSekolah;
   totalS: number;
   totalP: number;
+  guru: number;
 }
 
 export const Total = ({
@@ -14,6 +15,7 @@ export const Total = ({
   resultSekolah,
   totalS,
   totalP,
+  guru,
 }: TotalProps) => {
   const totalPosyandu =
     resultPosyandu.balita + resultPosyandu.bumil + resultPosyandu.busui;
@@ -33,7 +35,7 @@ export const Total = ({
         <Data label={`B3 (${totalP} Posyandu)`} value={totalPosyandu} />
         <Data
           label="Total Penerima Manfaat"
-          value={totalSekolah + totalPosyandu}
+          value={totalSekolah + totalPosyandu + guru}
         />
       </CardContent>
     </Card>
