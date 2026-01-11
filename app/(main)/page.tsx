@@ -66,7 +66,7 @@ export default function Home() {
           priority
         />
         <Prose>
-          <p>Minggu 1 - 12 Januari 2026</p>
+          <p>12 Januari 2026 (Minggu 1)</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
