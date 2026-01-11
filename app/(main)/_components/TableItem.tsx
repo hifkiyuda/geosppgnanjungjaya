@@ -12,9 +12,9 @@ import { sekolah } from "@/lib/sekolah";
 
 export const TableItem = () => {
   const totalSiswa = sekolah.reduce((sum, item) => sum + item.total_pm, 0);
-
   const totalGuru = sekolah.reduce((sum, item) => sum + item.total_guru, 0);
-
+  const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
+  const totalPb = sekolah.reduce((sum, item) => sum + item.pb, 0);
   const grandTotal = totalSiswa + totalGuru;
 
   return (
@@ -29,6 +29,8 @@ export const TableItem = () => {
               <TableHead className="w-[100px]">No</TableHead>
               <TableHead>Nama Sekolah</TableHead>
               <TableHead>Alamat</TableHead>
+              <TableHead className="text-right">Porsi Kecil</TableHead>
+              <TableHead className="text-right">Porsi Besar</TableHead>
               <TableHead className="text-right">Jumlah Siswa</TableHead>
               <TableHead className="text-right">Jumlah Guru</TableHead>
               <TableHead className="text-right">Total</TableHead>
@@ -38,20 +40,17 @@ export const TableItem = () => {
             {sekolah.map((item, index) => (
               <TableRow key={item.name}>
                 <TableCell>{index + 1}</TableCell>
-
                 <TableCell className="font-medium">
                   {item.name}
                   <div className="text-xs text-muted-foreground">
                     {item.category}
                   </div>
                 </TableCell>
-
                 <TableCell>{item.alamat}</TableCell>
-
+                <TableCell className="text-right">{item.pk}</TableCell>
+                <TableCell className="text-right">{item.pb}</TableCell>
                 <TableCell className="text-right">{item.total_pm}</TableCell>
-
                 <TableCell className="text-right">{item.total_guru}</TableCell>
-
                 <TableCell className="text-right font-semibold">
                   {item.total_pm + item.total_guru}
                 </TableCell>
@@ -59,11 +58,10 @@ export const TableItem = () => {
             ))}
             <TableRow className="bg-muted/50 font-bold">
               <TableCell colSpan={3}>TOTAL</TableCell>
-
+              <TableCell className="text-right">{totalPk}</TableCell>
+              <TableCell className="text-right">{totalPb}</TableCell>
               <TableCell className="text-right">{totalSiswa}</TableCell>
-
               <TableCell className="text-right">{totalGuru}</TableCell>
-
               <TableCell className="text-right">{grandTotal}</TableCell>
             </TableRow>
           </TableBody>

@@ -7,6 +7,8 @@ export type SekolahType = {
   alamat: string;
   total_pm: number;
   total_guru: number;
+  pk: number;
+  pb: number;
 };
 
 export const sekolah: SekolahType[] = [
@@ -113,6 +115,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Kubang RT 003 RW 004",
     total_pm: 133,
     total_guru: 11,
+    pk: 66,
+    pb: 67,
   },
   {
     geocode: [-7.055714, 108.029172],
@@ -121,6 +125,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Cioray Warung RT 001 RW 007",
     total_pm: 193,
     total_guru: 11,
+    pk: 108,
+    pb: 85,
   },
   {
     geocode: [-7.058151, 108.014624],
@@ -129,6 +135,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Margasari RT 004 RW 001",
     total_pm: 134,
     total_guru: 10,
+    pk: 65,
+    pb: 69,
   },
   {
     geocode: [-7.058039, 108.025883],
@@ -137,6 +145,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Palalangon RT 004 RW 006",
     total_pm: 94,
     total_guru: 10,
+    pk: 48,
+    pb: 46,
   },
   {
     geocode: [-7.048471, 108.023885],
@@ -145,6 +155,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Cipoos RT 001 RW 010",
     total_pm: 118,
     total_guru: 9,
+    pk: 52,
+    pb: 66,
   },
   {
     geocode: [-7.053699, 108.022337],
@@ -153,6 +165,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp.Ciboja RT 003 RW 005",
     total_pm: 78,
     total_guru: 9,
+    pk: 35,
+    pb: 43,
   },
   {
     geocode: [-7.053345, 108.018773],
@@ -161,6 +175,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 56,
     total_guru: 6,
+    pk: 21,
+    pb: 35,
   },
   {
     geocode: [-7.053507, 108.018562],
@@ -169,6 +185,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 16,
     total_guru: 11,
+    pk: 0,
+    pb: 16,
   },
   {
     geocode: [-7.053801, 108.022087],
@@ -177,6 +195,8 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp.Ciboja RT 003 RW 005",
     total_pm: 216,
     total_guru: 21,
+    pk: 0,
+    pb: 216,
   },
   {
     geocode: [-7.053129, 108.018392],
@@ -185,5 +205,7 @@ export const sekolah: SekolahType[] = [
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 55,
     total_guru: 20,
+    pk: 0,
+    pb: 55,
   },
 ];
