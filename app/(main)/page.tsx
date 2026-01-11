@@ -6,6 +6,7 @@ import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
 import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
+import { TableItem } from "./_components/TableItem";
 
 export interface ResultPosyandu {
   balita: number;
@@ -66,7 +67,7 @@ export default function Home() {
           priority
         />
         <Prose>
-          <p>12 Januari 2026 (Minggu 1)</p>
+          <p className="text-red-500">Update 12 Januari 2026</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -89,6 +90,7 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
+        <TableItem />
       </Container>
     </Section>
   );
