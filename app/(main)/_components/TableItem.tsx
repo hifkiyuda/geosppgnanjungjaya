@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -21,9 +20,6 @@ export const TableItem = () => {
     <Card>
       <CardContent>
         <Table>
-          <TableCaption>
-            Daftar Sekolah Penerima Manfaat untuk Minggu 1.
-          </TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">No</TableHead>

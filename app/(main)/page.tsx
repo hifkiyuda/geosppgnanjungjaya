@@ -67,7 +67,7 @@ export default function Home() {
           priority
         />
         <Prose>
-          <p className="text-red-500">Update 12 Januari 2026</p>
+          <p className="text-red-500">Update: Selasa, 13 Januari 2026</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -90,7 +90,9 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
-        <TableItem />
+        <div className="w-full overflow-x-auto">
+          <TableItem />
+        </div>
       </Container>
     </Section>
   );

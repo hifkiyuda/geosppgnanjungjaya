@@ -28,11 +28,8 @@ export const Total = ({
   return (
     <Card>
       <CardContent className="grid grid-cols-3 gap-4 sm:gap-6">
-        <Data
-          label={`Peserta Didik (${totalS} Sekolah)`}
-          value={totalSekolah}
-        />
-        <Data label={`B3 (${totalP} Posyandu)`} value={totalPosyandu} />
+        <Data label="Peserta Didik" value={totalSekolah} />
+        <Data label="3B Posyandu" value={totalPosyandu} />
         <Data
           label="Total Penerima Manfaat"
           value={totalSekolah + totalPosyandu + guru}
