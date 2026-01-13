@@ -13,7 +13,7 @@ export const TableItem = () => {
   const totalSiswa = sekolah.reduce((sum, item) => sum + item.total_pm, 0);
   const totalGuru = sekolah.reduce((sum, item) => sum + item.total_guru, 0);
   const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
-  const totalPb = sekolah.reduce((sum, item) => sum + item.pb, 0);
+  const totalPb = sekolah.reduce((sum, item) => sum + item.pb, 0) + totalGuru;
   const grandTotal = totalSiswa + totalGuru;
 
   return (
@@ -27,8 +27,6 @@ export const TableItem = () => {
               <TableHead>Alamat</TableHead>
               <TableHead className="text-right">Porsi Kecil</TableHead>
               <TableHead className="text-right">Porsi Besar</TableHead>
-              <TableHead className="text-right">Jumlah Siswa</TableHead>
-              <TableHead className="text-right">Jumlah Guru</TableHead>
               <TableHead className="text-right">Total</TableHead>
             </TableRow>
           </TableHeader>
@@ -44,10 +42,10 @@ export const TableItem = () => {
                 </TableCell>
                 <TableCell>{item.alamat}</TableCell>
                 <TableCell className="text-right">{item.pk}</TableCell>
-                <TableCell className="text-right">{item.pb}</TableCell>
-                <TableCell className="text-right">{item.total_pm}</TableCell>
-                <TableCell className="text-right">{item.total_guru}</TableCell>
-                <TableCell className="text-right font-semibold">
+                <TableCell className="text-right">
+                  {item.pb + item.total_guru}
+                </TableCell>
+                <TableCell className="text-right">
                   {item.total_pm + item.total_guru}
                 </TableCell>
               </TableRow>
@@ -56,8 +54,6 @@ export const TableItem = () => {
               <TableCell colSpan={3}>TOTAL</TableCell>
               <TableCell className="text-right">{totalPk}</TableCell>
               <TableCell className="text-right">{totalPb}</TableCell>
-              <TableCell className="text-right">{totalSiswa}</TableCell>
-              <TableCell className="text-right">{totalGuru}</TableCell>
               <TableCell className="text-right">{grandTotal}</TableCell>
             </TableRow>
           </TableBody>

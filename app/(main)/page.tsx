@@ -1,6 +1,6 @@
 import { Container, Prose, Section } from "@/components/ds";
 import { MapWrapper } from "@/components/map/MapWrapper";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
@@ -90,7 +90,26 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
-        <div className="w-full overflow-x-auto">
+        {/* <div className="w-full overflow-x-auto">
+          <TableItem />
+        </div> */}
+        <Card>
+          <CardContent className="space-y-4">
+            <Prose>
+              <h6>Kloter 1 Distribusi:</h6>
+              <p className="text-muted-foreground">{`MIS YPI PST Galmasi → MTSS YPI Galmasi → SMA Islam Pesantren Galmasi → SDN 1 Nanjungjaya → MIS Assibyan`}</p>
+            </Prose>
+            <Prose>
+              <h6>Kloter 2 Distribusi:</h6>
+              <p className="text-muted-foreground">{`SDN 2 Nanjungjaya → SDN 4 Nanjungjaya → MIS Muhammadiyah → SDN 3 Nanjungjaya`}</p>
+            </Prose>
+            <Prose>
+              <h6>Kloter 3 Distribusi:</h6>
+              <p className="text-muted-foreground">{`SMP IT Darul Abror`}</p>
+            </Prose>
+          </CardContent>
+        </Card>
+        <div>
           <TableItem />
         </div>
       </Container>
