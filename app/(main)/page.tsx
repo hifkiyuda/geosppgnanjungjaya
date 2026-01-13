@@ -67,7 +67,7 @@ export default function Home() {
           priority
         />
         <Prose>
-          <p className="text-red-500">Update: Selasa, 13 Januari 2026</p>
+          <p className="text-red-500">Update: Rabu, 14 Januari 2026</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -96,16 +96,15 @@ export default function Home() {
         <Card>
           <CardContent className="space-y-4">
             <Prose>
-              <h6>Kloter 1 Distribusi:</h6>
-              <p className="text-muted-foreground">{`MIS YPI PST Galmasi → MTSS YPI Galmasi → SMA Islam Pesantren Galmasi → SDN 1 Nanjungjaya → MIS Assibyan`}</p>
+              <h5>Alur Distribusi</h5>
             </Prose>
             <Prose>
-              <h6>Kloter 2 Distribusi:</h6>
-              <p className="text-muted-foreground">{`SDN 2 Nanjungjaya → SDN 4 Nanjungjaya → MIS Muhammadiyah → SDN 3 Nanjungjaya`}</p>
+              <h6>Kloter 1: 642 Porsi</h6>
+              <p className="text-muted-foreground">{`SDN 2 Nanjungjaya (25) → MIS Assibyan (127) → SDN 1 Nanjungjaya (146) → MIS YPI PST Galmasi (62) → MTSS YPI Galmasi (27) → SMA Islam Galmasi (75)`}</p>
             </Prose>
             <Prose>
-              <h6>Kloter 3 Distribusi:</h6>
-              <p className="text-muted-foreground">{`SMP IT Darul Abror`}</p>
+              <h6>Kloter 2: 572 Porsi</h6>
+              <p className="text-muted-foreground">{`SDN 4 Nanjungjaya (104) → MIS Muhammadiyah (87) → SMP IT Darul Abror (157) → SDN 3 Nanjungjaya (144) → Al - Muawannah/Darul Abror (80)`}</p>
             </Prose>
           </CardContent>
         </Card>

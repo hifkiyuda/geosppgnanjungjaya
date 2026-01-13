@@ -192,7 +192,7 @@ export const sekolah: SekolahType[] = [
     geocode: [-7.053801, 108.022087],
     category: "SMP/MTS",
     name: "SMP IT DARUL ABROR",
-    alamat: "Kp.Ciboja RT 003 RW 005",
+    alamat: "Kp. Ciboja RT 003 RW 005",
     total_pm: 216,
     total_guru: 21,
     pk: 0,
