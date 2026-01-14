@@ -1,12 +1,15 @@
 import { Container, Prose, Section } from "@/components/ds";
 import { MapWrapper } from "@/components/map/MapWrapper";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
 import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
 import { TableItem } from "./_components/TableItem";
+import { Schedule } from "./_components/Schedule";
+import { format } from "date-fns";
+import { id } from "date-fns/locale";
 
 export interface ResultPosyandu {
   balita: number;
@@ -30,6 +33,12 @@ export interface ResultSekolah {
 }
 
 export default function Home() {
+  const date = new Date();
+
+  const formattedDate = format(date, "EEEE, dd MMMM yyyy", {
+    locale: id,
+  });
+
   const resultPosyandu: ResultPosyandu = posyandu.reduce(
     (acc, item) => {
       acc.balita += item.total_pm.balita;
@@ -67,7 +76,7 @@ export default function Home() {
           priority
         />
         <Prose>
-          <p className="text-red-500">Update: Rabu, 14 Januari 2026</p>
+          <p className="text-red-500">{formattedDate}</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -90,25 +99,8 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
-        {/* <div className="w-full overflow-x-auto">
-          <TableItem />
-        </div> */}
-        <Card>
-          <CardContent className="space-y-4">
-            <Prose>
-              <h5>Alur Distribusi</h5>
-            </Prose>
-            <Prose>
-              <h6>Kloter 1: 642 Porsi</h6>
-              <p className="text-muted-foreground">{`SDN 2 Nanjungjaya (25) → MIS Assibyan (127) → SDN 1 Nanjungjaya (146) → MIS YPI PST Galmasi (62) → MTSS YPI Galmasi (27) → SMA Islam Galmasi (75)`}</p>
-            </Prose>
-            <Prose>
-              <h6>Kloter 2: 572 Porsi</h6>
-              <p className="text-muted-foreground">{`SDN 4 Nanjungjaya (104) → MIS Muhammadiyah (87) → SMP IT Darul Abror (157) → SDN 3 Nanjungjaya (144) → Al - Muawannah/Darul Abror (80)`}</p>
-            </Prose>
-          </CardContent>
-        </Card>
-        <div>
+        <Schedule />
+        <div className="w-full overflow-x-auto">
           <TableItem />
         </div>
       </Container>

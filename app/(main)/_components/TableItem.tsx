@@ -24,10 +24,10 @@ export const TableItem = () => {
             <TableRow>
               <TableHead className="w-[100px]">No</TableHead>
               <TableHead>Nama Sekolah</TableHead>
+              <TableHead>Porsi Kecil</TableHead>
+              <TableHead>Porsi Besar</TableHead>
+              <TableHead>Total</TableHead>
               <TableHead>Alamat</TableHead>
-              <TableHead className="text-right">Porsi Kecil</TableHead>
-              <TableHead className="text-right">Porsi Besar</TableHead>
-              <TableHead className="text-right">Total</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -40,21 +40,18 @@ export const TableItem = () => {
                     {item.category}
                   </div>
                 </TableCell>
+                <TableCell>{item.pk}</TableCell>
+                <TableCell>{item.pb + item.total_guru}</TableCell>
+                <TableCell>{item.total_pm + item.total_guru}</TableCell>
                 <TableCell>{item.alamat}</TableCell>
-                <TableCell className="text-right">{item.pk}</TableCell>
-                <TableCell className="text-right">
-                  {item.pb + item.total_guru}
-                </TableCell>
-                <TableCell className="text-right">
-                  {item.total_pm + item.total_guru}
-                </TableCell>
               </TableRow>
             ))}
             <TableRow className="bg-muted/50 font-bold">
-              <TableCell colSpan={3}>TOTAL</TableCell>
-              <TableCell className="text-right">{totalPk}</TableCell>
-              <TableCell className="text-right">{totalPb}</TableCell>
-              <TableCell className="text-right">{grandTotal}</TableCell>
+              <TableCell></TableCell>
+              <TableCell>TOTAL</TableCell>
+              <TableCell>{totalPk}</TableCell>
+              <TableCell>{totalPb}</TableCell>
+              <TableCell>{grandTotal}</TableCell>
             </TableRow>
           </TableBody>
         </Table>

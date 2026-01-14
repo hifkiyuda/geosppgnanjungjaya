@@ -28,6 +28,11 @@ const customIconSchool = new Icon({
   iconSize: [24, 24],
 });
 
+const customIconSchool2 = new Icon({
+  iconUrl: "/icon/pin2.png",
+  iconSize: [24, 24],
+});
+
 const customIconPosyandu = new Icon({
   iconUrl: "/icon/posyandu.svg",
   iconSize: [24, 24],
@@ -105,7 +110,7 @@ export default function MapGeo() {
             <li>
               Jalan Nasional III, Desa Nanjungjaya, Kec. Kersamanah, Kab. Garut
             </li>
-            <li>Jumlah Penerima Manfaat: 1321</li>
+            <li>Jumlah Penerima Manfaat: 1214</li>
           </ul>
         </Popup>
       </Marker>
@@ -115,7 +120,14 @@ export default function MapGeo() {
 
         return (
           <div key={id}>
-            <Marker position={s.geocode} icon={customIconSchool}>
+            <Marker
+              position={s.geocode}
+              icon={
+                s.category === "PAUD/TK/RA"
+                  ? customIconSchool2
+                  : customIconSchool
+              }
+            >
               <Tooltip permanent direction="top" offset={[0, -10]}>
                 {s.name}
               </Tooltip>

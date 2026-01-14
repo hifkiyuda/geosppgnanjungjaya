@@ -19,6 +19,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cioray Tengah RT 002 RW 008",
   //   total_pm: 34,
   //   total_guru: 5,
+  //   pk: 34,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.055737, 108.014802],
@@ -27,6 +29,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cipatik RT 002 RW 002",
   //   total_pm: 30,
   //   total_guru: 0,
+  //   pk: 30,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.056147, 108.029201],
@@ -35,6 +39,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cioray Warung RT 001 RW 007",
   //   total_pm: 13,
   //   total_guru: 10,
+  //   pk: 13,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.055748, 108.026164],
@@ -43,6 +49,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Palalangon RT 003 RW 006",
   //   total_pm: 20,
   //   total_guru: 3,
+  //   pk: 20,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.060075, 108.012735],
@@ -51,6 +59,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Sangkali RT 003 RW 001",
   //   total_pm: 26,
   //   total_guru: 3,
+  //   pk: 26,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.054617, 108.013192],
@@ -59,6 +69,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cipatik RT 003 RW 003",
   //   total_pm: 21,
   //   total_guru: 5,
+  //   pk: 21,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.055566, 108.022569],
@@ -67,6 +79,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Ibnu Sina RT 001 RW 005",
   //   total_pm: 18,
   //   total_guru: 4,
+  //   pk: 18,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.053017, 108.019351],
@@ -75,6 +89,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Kubang RT 003 RW 004",
   //   total_pm: 27,
   //   total_guru: 5,
+  //   pk: 27,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.055015, 108.024994],
@@ -83,6 +99,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Palasari RT 005 RW 006",
   //   total_pm: 36,
   //   total_guru: 9,
+  //   pk: 36,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.048938, 108.023933],
@@ -91,6 +109,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cipoos RT 001 RW 010",
   //   total_pm: 41,
   //   total_guru: 9,
+  //   pk: 41,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.055375, 108.013813],
@@ -99,6 +119,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cipatik RT 002 RW 003",
   //   total_pm: 11,
   //   total_guru: 6,
+  //   pk: 11,
+  //   pb: 0,
   // },
   // {
   //   geocode: [-7.046885, 108.027908],
@@ -107,6 +129,8 @@ export const sekolah: SekolahType[] = [
   //   alamat: "Kp. Cioray Hilir RT 001 RW 011",
   //   total_pm: 11,
   //   total_guru: 0,
+  //   pk: 11,
+  //   pb: 0,
   // },
   {
     geocode: [-7.052175, 108.019983],
@@ -162,7 +186,7 @@ export const sekolah: SekolahType[] = [
     geocode: [-7.053699, 108.022337],
     category: "SD/MI",
     name: "MIS MUHAMMADIYAH",
-    alamat: "Kp.Ciboja RT 003 RW 005",
+    alamat: "Kp. Ciboja RT 003 RW 005",
     total_pm: 78,
     total_guru: 9,
     pk: 35,
@@ -201,7 +225,7 @@ export const sekolah: SekolahType[] = [
   {
     geocode: [-7.053129, 108.018392],
     category: "SMA/MA",
-    name: "SMA Islam Galmasi",
+    name: "SMA ISLAM PESANTREN GALMASI",
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 55,
     total_guru: 20,
