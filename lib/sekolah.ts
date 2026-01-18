@@ -20,7 +20,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 34,
     total_guru: 5,
     pk: 34,
-    pb: 5,
+    pb: 0,
   },
   {
     geocode: [-7.055737, 108.014802],
@@ -30,7 +30,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 30,
     total_guru: 4,
     pk: 30,
-    pb: 4,
+    pb: 0,
   },
   {
     geocode: [-7.056147, 108.029201],
@@ -40,7 +40,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 13,
     total_guru: 5,
     pk: 13,
-    pb: 5,
+    pb: 0,
   },
   {
     geocode: [-7.055748, 108.026164],
@@ -50,7 +50,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 20,
     total_guru: 3,
     pk: 20,
-    pb: 3,
+    pb: 0,
   },
   {
     geocode: [-7.060075, 108.012735],
@@ -60,7 +60,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 26,
     total_guru: 4,
     pk: 26,
-    pb: 4,
+    pb: 0,
   },
   {
     geocode: [-7.054617, 108.013192],
@@ -70,7 +70,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 21,
     total_guru: 5,
     pk: 21,
-    pb: 5,
+    pb: 0,
   },
   // {
   //   geocode: [-7.055566, 108.022569],
@@ -90,7 +90,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 27,
     total_guru: 3,
     pk: 27,
-    pb: 3,
+    pb: 0,
   },
   {
     geocode: [-7.055015, 108.024994],
@@ -100,7 +100,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 36,
     total_guru: 5,
     pk: 36,
-    pb: 5,
+    pb: 0,
   },
   {
     geocode: [-7.048938, 108.023933],
@@ -110,7 +110,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 41,
     total_guru: 7,
     pk: 41,
-    pb: 7,
+    pb: 0,
   },
   {
     geocode: [-7.055375, 108.013813],
@@ -120,7 +120,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 11,
     total_guru: 4,
     pk: 11,
-    pb: 4,
+    pb: 0,
   },
   {
     geocode: [-7.046885, 108.027908],
@@ -130,7 +130,7 @@ export const sekolah: SekolahType[] = [
     total_pm: 11,
     total_guru: 4,
     pk: 11,
-    pb: 4,
+    pb: 0,
   },
   {
     geocode: [-7.052175, 108.019983],
