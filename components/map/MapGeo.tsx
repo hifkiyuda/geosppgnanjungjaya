@@ -100,7 +100,7 @@ export default function MapGeo() {
       />
       <Marker position={LOKASI_SPPG} icon={customIconSppg}>
         <Tooltip permanent direction="top" offset={[0, -10]}>
-          SPPG Nanjungjaya
+          SPPG NANJUNGJAYA CIORAY
         </Tooltip>
         <Popup>
           <p className="font-semibold">
@@ -110,7 +110,6 @@ export default function MapGeo() {
             <li>
               Jalan Nasional III, Desa Nanjungjaya, Kec. Kersamanah, Kab. Garut
             </li>
-            <li>Jumlah Penerima Manfaat: 1214</li>
           </ul>
         </Popup>
       </Marker>
@@ -139,7 +138,8 @@ export default function MapGeo() {
                     1
                   )} Menit)`}</li>
                   <li>Kategori: {s.category}</li>
-                  <li>Penerima Manfaat: {s.total_pm} Siswa</li>
+                  <li>Jumlah Siswa: {s.total_pm} Orang</li>
+                  <li>Jumlah Guru dan Tendik: {s.total_guru} Orang</li>
                 </ul>
               </Popup>
             </Marker>
