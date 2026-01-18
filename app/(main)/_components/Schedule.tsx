@@ -100,17 +100,17 @@ export const Schedule = () => {
     <Card>
       <CardContent className="space-y-4">
         <Prose>
-          <h5>Alur Distribusi</h5>
+          <h6>Alur Distribusi Paket MBG</h6>
         </Prose>
         <div className="grid sm:grid-cols-2 gap-4">
           <Prose>
-            <h6 className="font-semibold">{`Mobil 1: ${mobil1.reduce(
+            <p className="font-semibold">{`Mobil 1: ${mobil1.reduce(
               (sum, m) => sum + m.total,
               0
-            )} Paket`}</h6>
+            )} Paket`}</p>
             <ol>
               {mobil1.map((m, i) => (
-                <li key={i}>
+                <li key={i} className="text-zinc-800 text-sm">
                   {`${m.name} `}
                   <span className="font-bold">({m.total})</span>
                 </li>
@@ -118,13 +118,13 @@ export const Schedule = () => {
             </ol>
           </Prose>
           <Prose>
-            <h6 className="font-semibold">{`Mobil 2: ${mobil2.reduce(
+            <p className="font-semibold">{`Mobil 2: ${mobil2.reduce(
               (sum, m) => sum + m.total,
               0
-            )} Paket`}</h6>
+            )} Paket`}</p>
             <ol>
               {mobil2.map((m, i) => (
-                <li key={i}>
+                <li key={i} className="text-zinc-800 text-sm">
                   {`${m.name} `}
                   <span className="font-bold">({m.total})</span>
                 </li>
