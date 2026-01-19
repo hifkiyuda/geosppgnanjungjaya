@@ -1,3 +1,5 @@
+"use client";
+
 import { Container, Prose, Section } from "@/components/ds";
 import { MapWrapper } from "@/components/map/MapWrapper";
 import { Card } from "@/components/ui/card";
@@ -6,10 +8,12 @@ import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
 import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
-import { TableItem } from "./_components/TableItem";
+import { Target } from "./_components/Target";
 import { Schedule } from "./_components/Schedule";
 import { format } from "date-fns";
 import { id } from "date-fns/locale";
+import { useEffect, useState } from "react";
+import { History } from "./_components/History";
 
 export interface ResultPosyandu {
   balita: number;
@@ -33,11 +37,12 @@ export interface ResultSekolah {
 }
 
 export default function Home() {
-  const date = new Date();
+  const [date, setFormattedDate] = useState("");
 
-  const formattedDate = format(date, "EEEE, dd MMMM yyyy", {
-    locale: id,
-  });
+  useEffect(() => {
+    const now = new Date();
+    setFormattedDate(format(now, "EEEE, dd MMMM yyyy", { locale: id }));
+  }, []);
 
   const resultPosyandu: ResultPosyandu = posyandu.reduce(
     (acc, item) => {
@@ -46,7 +51,7 @@ export default function Home() {
       acc.busui += item.total_pm.busui;
       return acc;
     },
-    { balita: 0, bumil: 0, busui: 0 }
+    { balita: 0, bumil: 0, busui: 0 },
   );
 
   const resultSekolah: ResultSekolah = sekolah.reduce(
@@ -59,7 +64,7 @@ export default function Home() {
       "SD/MI": { total_pm: 0 },
       "SMP/MTS": { total_pm: 0 },
       "SMA/MA": { total_pm: 0 },
-    }
+    },
   );
 
   const guru = sekolah.reduce((sum, s) => sum + s.total_guru, 0);
@@ -67,16 +72,26 @@ export default function Home() {
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
-        <Image
-          src={"/logo_bgn.png"}
-          alt="Logo BGN"
-          width={1762}
-          height={742}
-          className="w-30 h-auto"
-          priority
-        />
+        <div className="flex items-center space-x-4">
+          <Image
+            src={"/logo_bgn.png"}
+            alt="Badan Gizi Nasional"
+            width={1000}
+            height={0}
+            className="w-30 h-auto"
+            priority
+          />
+          <Image
+            src={"/logo_yayasan.png"}
+            alt="Yayasan Always Be Positive"
+            width={1000}
+            height={0}
+            className="w-14 h-auto"
+            priority
+          />
+        </div>
         <Prose>
-          <p className="text-red-500">{formattedDate}</p>
+          <p className="text-red-500">{date}</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -101,7 +116,10 @@ export default function Home() {
         </Card>
         <Schedule />
         <div className="w-full overflow-x-auto">
-          <TableItem />
+          <History />
+        </div>
+        <div className="w-full overflow-x-auto">
+          <Target />
         </div>
       </Container>
     </Section>

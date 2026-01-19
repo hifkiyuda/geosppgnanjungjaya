@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   Table,
   TableBody,
+  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -9,7 +10,7 @@ import {
 } from "@/components/ui/table";
 import { sekolah } from "@/lib/sekolah";
 
-export const TableItem = () => {
+export const Target = () => {
   const totalSiswa = sekolah.reduce((sum, item) => sum + item.total_pm, 0);
   const totalGuru = sekolah.reduce((sum, item) => sum + item.total_guru, 0);
   const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
@@ -20,6 +21,7 @@ export const TableItem = () => {
     <Card>
       <CardContent>
         <Table>
+          <TableCaption>Daftar Sekolah Penerima Manfaat.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">No</TableHead>

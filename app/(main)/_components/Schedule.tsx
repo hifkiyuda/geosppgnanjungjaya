@@ -14,10 +14,10 @@ const mobil1 = [
     name: "RA AS SAADAH",
     total: 41,
   },
-  // {
-  //   name: "TK AISIYAH",
-  //   total: 22,
-  // },
+  {
+    name: "TK AISIYAH",
+    total: 22,
+  },
   {
     name: "MIS MUHAMMADIYAH",
     total: 87,
@@ -104,29 +104,29 @@ export const Schedule = () => {
         </Prose>
         <div className="grid sm:grid-cols-2 gap-4">
           <Prose>
-            <p className="font-semibold">{`Mobil 1: ${mobil1.reduce(
+            <p className="font-medium">{`Mobil 1: ${mobil1.reduce(
               (sum, m) => sum + m.total,
-              0
+              0,
             )} Paket`}</p>
             <ol>
               {mobil1.map((m, i) => (
                 <li key={i} className="text-zinc-800 text-sm">
                   {`${m.name} `}
-                  <span className="font-bold">({m.total})</span>
+                  <span className="font-semibold">({m.total})</span>
                 </li>
               ))}
             </ol>
           </Prose>
           <Prose>
-            <p className="font-semibold">{`Mobil 2: ${mobil2.reduce(
+            <p className="font-medium">{`Mobil 2: ${mobil2.reduce(
               (sum, m) => sum + m.total,
-              0
+              0,
             )} Paket`}</p>
             <ol>
               {mobil2.map((m, i) => (
                 <li key={i} className="text-zinc-800 text-sm">
                   {`${m.name} `}
-                  <span className="font-bold">({m.total})</span>
+                  <span className="font-semibold">({m.total})</span>
                 </li>
               ))}
             </ol>
