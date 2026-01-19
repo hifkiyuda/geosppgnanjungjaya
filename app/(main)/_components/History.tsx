@@ -30,7 +30,7 @@ export const History = () => {
           </TableHeader>
           <TableBody>
             {history.map((item, index) => (
-              <TableRow key={index} className="bg-muted/50">
+              <TableRow key={index}>
                 <TableCell>{item.week}</TableCell>
                 <TableCell>{item.mon}</TableCell>
                 <TableCell>{item.tue}</TableCell>

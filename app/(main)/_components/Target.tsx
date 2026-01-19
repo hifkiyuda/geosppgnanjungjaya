@@ -48,7 +48,7 @@ export const Target = () => {
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
             ))}
-            <TableRow className="bg-muted/50 font-bold">
+            <TableRow className="font-bold">
               <TableCell></TableCell>
               <TableCell>TOTAL</TableCell>
               <TableCell>{totalPk}</TableCell>
