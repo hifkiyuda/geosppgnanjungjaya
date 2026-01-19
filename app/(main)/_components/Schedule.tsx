@@ -32,7 +32,7 @@ const mobil1 = [
   },
   {
     name: "RA AL-FALAH CIPATIK",
-    total: 15,
+    total: 16,
   },
   {
     name: "PAUD KB AL-ANSHORIYAH",
@@ -99,12 +99,10 @@ export const Schedule = () => {
   return (
     <Card>
       <CardContent className="space-y-4">
-        <Prose>
-          <h6>Alur Distribusi Paket MBG</h6>
-        </Prose>
+        <p className="text-muted-foreground">Alur distribusi paket MBG:</p>
         <div className="grid sm:grid-cols-2 gap-4">
           <Prose>
-            <p className="font-medium">{`Mobil 1: ${mobil1.reduce(
+            <p>{`Kloter 1: ${mobil1.reduce(
               (sum, m) => sum + m.total,
               0,
             )} Paket`}</p>
@@ -118,7 +116,7 @@ export const Schedule = () => {
             </ol>
           </Prose>
           <Prose>
-            <p className="font-medium">{`Mobil 2: ${mobil2.reduce(
+            <p>{`Kloter 2: ${mobil2.reduce(
               (sum, m) => sum + m.total,
               0,
             )} Paket`}</p>

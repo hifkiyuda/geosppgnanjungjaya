@@ -14,6 +14,7 @@ import { format } from "date-fns";
 import { id } from "date-fns/locale";
 import { useEffect, useState } from "react";
 import { History } from "./_components/History";
+import { Footer } from "./_components/Footer";
 
 export interface ResultPosyandu {
   balita: number;
@@ -72,7 +73,7 @@ export default function Home() {
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 justify-center">
           <Image
             src={"/logo_bgn.png"}
             alt="Badan Gizi Nasional"
@@ -90,8 +91,8 @@ export default function Home() {
             priority
           />
         </div>
-        <Prose>
-          <p className="text-red-500">{date}</p>
+        <Prose className="text-center">
+          <p className="text-blue-800 font-medium">{date}</p>
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -122,6 +123,7 @@ export default function Home() {
           <Target />
         </div>
       </Container>
+      <Footer />
     </Section>
   );
 }
