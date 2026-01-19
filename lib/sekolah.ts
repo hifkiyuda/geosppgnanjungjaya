@@ -117,9 +117,9 @@ export const sekolah: SekolahType[] = [
     category: "PAUD/TK/RA",
     name: "RA AL-FALAH CIPATIK",
     alamat: "Kp. Cipatik RT 002 RW 003",
-    total_pm: 11,
+    total_pm: 12,
     total_guru: 4,
-    pk: 11,
+    pk: 12,
     pb: 0,
   },
   {
