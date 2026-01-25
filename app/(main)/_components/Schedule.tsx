@@ -79,7 +79,7 @@ const mobil2 = [
   },
   {
     name: "RA ASSALAM KERSAMANAH",
-    total: 30,
+    total: 31,
   },
   {
     name: "MIS YPI PST GALMASI",

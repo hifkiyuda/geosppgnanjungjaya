@@ -88,7 +88,7 @@ export const sekolah: SekolahType[] = [
     name: "RA ASSALAM KERSAMANAH",
     alamat: "Kp. Kubang RT 003 RW 004",
     total_pm: 27,
-    total_guru: 3,
+    total_guru: 4,
     pk: 27,
     pb: 0,
   },

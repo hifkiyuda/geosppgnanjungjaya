@@ -1,20 +1,13 @@
-"use client";
-
 import { Container, Prose, Section } from "@/components/ds";
 import { MapWrapper } from "@/components/map/MapWrapper";
 import { Card } from "@/components/ui/card";
-import Image from "next/image";
 import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
 import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
 import { Target } from "./_components/Target";
-import { Schedule } from "./_components/Schedule";
-import { format } from "date-fns";
-import { id } from "date-fns/locale";
-import { useEffect, useState } from "react";
 import { History } from "./_components/History";
-import { Footer } from "./_components/Footer";
+import { Today } from "@/components/ui/today";
 
 export interface ResultPosyandu {
   balita: number;
@@ -38,13 +31,6 @@ export interface ResultSekolah {
 }
 
 export default function Home() {
-  const [date, setFormattedDate] = useState("");
-
-  useEffect(() => {
-    const now = new Date();
-    setFormattedDate(format(now, "EEEE, dd MMMM yyyy", { locale: id }));
-  }, []);
-
   const resultPosyandu: ResultPosyandu = posyandu.reduce(
     (acc, item) => {
       acc.balita += item.total_pm.balita;
@@ -73,26 +59,8 @@ export default function Home() {
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
-        <div className="flex items-center space-x-4 justify-center">
-          <Image
-            src={"/logo_bgn.png"}
-            alt="Badan Gizi Nasional"
-            width={1000}
-            height={0}
-            className="w-30 h-auto"
-            priority
-          />
-          <Image
-            src={"/logo_yayasan.png"}
-            alt="Yayasan Always Be Positive"
-            width={1000}
-            height={0}
-            className="w-14 h-auto"
-            priority
-          />
-        </div>
-        <Prose className="text-center">
-          <p className="text-blue-800 font-medium">{date}</p>
+        <Prose>
+          <Today />
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
@@ -115,7 +83,7 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
-        <Schedule />
+        {/* <Schedule /> */}
         <div className="w-full overflow-x-auto">
           <History />
         </div>
@@ -123,7 +91,6 @@ export default function Home() {
           <Target />
         </div>
       </Container>
-      <Footer />
     </Section>
   );
 }

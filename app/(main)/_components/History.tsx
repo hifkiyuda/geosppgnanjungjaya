@@ -16,9 +16,7 @@ export const History = () => {
     <Card>
       <CardContent className="space-y-4">
         <Table>
-          <TableCaption>
-            Riwayat Perubahan Jumlah Penerima Manfaat.
-          </TableCaption>
+          <TableCaption>Riwayat Jumlah Penerima Manfaat.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead>Tanggal</TableHead>
