@@ -13,9 +13,6 @@ export const Header = () => {
           className="w-30 h-auto"
           priority
         />
-        <div>
-          <a href="">Geospasial</a>
-        </div>
       </Container>
     </header>
   );
