@@ -187,9 +187,9 @@ export const sekolah: SekolahType[] = [
     category: "SD/MI",
     name: "MIS MUHAMMADIYAH",
     alamat: "Kp. Ciboja RT 003 RW 005",
-    total_pm: 78,
+    total_pm: 80,
     total_guru: 9,
-    pk: 35,
+    pk: 37,
     pb: 43,
   },
   {

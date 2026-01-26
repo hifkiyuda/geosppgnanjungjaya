@@ -30,10 +30,10 @@ export const history: HistoryType[] = [
   {
     week: "26-01-2026 s.d. 31-01-2026",
     mon: "1557",
-    tue: "1557",
-    wed: "1557",
-    thu: "1557",
-    fri: "1557",
-    sat: "1557",
+    tue: "1559",
+    wed: "1559",
+    thu: "1559",
+    fri: "1559",
+    sat: "1559",
   },
 ];
