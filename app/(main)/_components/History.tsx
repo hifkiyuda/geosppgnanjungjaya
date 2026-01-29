@@ -32,12 +32,48 @@ export const History = () => {
             {history.map((item, index) => (
               <TableRow key={index}>
                 <TableCell>{item.week}</TableCell>
-                <TableCell>{item.mon}</TableCell>
-                <TableCell>{item.tue}</TableCell>
-                <TableCell>{item.wed}</TableCell>
-                <TableCell>{item.thu}</TableCell>
-                <TableCell>{item.fri}</TableCell>
-                <TableCell>{item.sat}</TableCell>
+                <TableCell
+                  className={
+                    item.mon.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.mon}
+                </TableCell>
+                <TableCell
+                  className={
+                    item.tue.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.tue}
+                </TableCell>
+                <TableCell
+                  className={
+                    item.wed.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.wed}
+                </TableCell>
+                <TableCell
+                  className={
+                    item.thu.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.thu}
+                </TableCell>
+                <TableCell
+                  className={
+                    item.fri.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.fri}
+                </TableCell>
+                <TableCell
+                  className={
+                    item.sat.toLowerCase() === "libur" ? "text-red-500" : ""
+                  }
+                >
+                  {item.sat}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

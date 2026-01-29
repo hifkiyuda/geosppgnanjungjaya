@@ -33,7 +33,7 @@ export const history: HistoryType[] = [
     tue: "1559",
     wed: "1559",
     thu: "1559",
-    fri: "1559",
-    sat: "1559",
+    fri: "1561",
+    sat: "1561",
   },
 ];

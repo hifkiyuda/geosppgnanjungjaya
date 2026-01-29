@@ -57,9 +57,9 @@ export const sekolah: SekolahType[] = [
     category: "PAUD/TK/RA",
     name: "PAUD KB AT TAQWA",
     alamat: "Kp. Sangkali RT 003 RW 001",
-    total_pm: 26,
+    total_pm: 28,
     total_guru: 4,
-    pk: 26,
+    pk: 28,
     pb: 0,
   },
   {
