@@ -7,6 +7,7 @@ import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
 import { Target } from "./_components/Target";
 import { History } from "./_components/History";
+import { Schedule } from "./_components/Schedule";
 import { Today } from "@/components/ui/today";
 
 export interface ResultPosyandu {
@@ -83,7 +84,7 @@ export default function Home() {
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
-        {/* <Schedule /> */}
+        <Schedule />
         <div className="w-full overflow-x-auto">
           <History />
         </div>
