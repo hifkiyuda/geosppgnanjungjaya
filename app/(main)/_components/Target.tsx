@@ -12,7 +12,7 @@ import { sekolah } from "@/lib/sekolah";
 
 export const Target = () => {
   const totalSiswa = sekolah.reduce((sum, item) => sum + item.total_pm, 0);
-  const totalGuru = sekolah.reduce((sum, item) => sum + item.total_guru, 0);
+  const totalGuru = sekolah.reduce((sum, item) => sum + item.guru, 0);
   const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
   const totalPb = sekolah.reduce((sum, item) => sum + item.pb, 0) + totalGuru;
   const grandTotal = totalSiswa + totalGuru;
@@ -43,8 +43,8 @@ export const Target = () => {
                   </div>
                 </TableCell>
                 <TableCell>{item.pk}</TableCell>
-                <TableCell>{item.pb + item.total_guru}</TableCell>
-                <TableCell>{item.total_pm + item.total_guru}</TableCell>
+                <TableCell>{item.pb + item.guru}</TableCell>
+                <TableCell>{item.total_pm + item.guru}</TableCell>
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
             ))}

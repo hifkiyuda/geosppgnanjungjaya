@@ -46,7 +46,7 @@ export default function MapGeo() {
   const filteredKelurahan: FeatureCollection = {
     type: "FeatureCollection",
     features: dataKelurahan.features.filter(
-      (f: Feature) => f.properties?.kd_kecamatan === KODE_KECAMATAN_KERSAMANAH
+      (f: Feature) => f.properties?.kd_kecamatan === KODE_KECAMATAN_KERSAMANAH,
     ),
   };
 
@@ -135,11 +135,11 @@ export default function MapGeo() {
                 <ul>
                   <li>Alamat: {s.alamat}</li>
                   <li>{`Jarak: ${d.toFixed(0)} M (${minutes.toFixed(
-                    1
+                    1,
                   )} Menit)`}</li>
                   <li>Kategori: {s.category}</li>
                   <li>Jumlah Siswa: {s.total_pm} Orang</li>
-                  <li>Jumlah Guru dan Tendik: {s.total_guru} Orang</li>
+                  <li>Jumlah Guru dan Tendik: {s.guru} Orang</li>
                 </ul>
               </Popup>
             </Marker>

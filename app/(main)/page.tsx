@@ -55,7 +55,7 @@ export default function Home() {
     },
   );
 
-  const guru = sekolah.reduce((sum, s) => sum + s.total_guru, 0);
+  const guru = sekolah.reduce((sum, s) => sum + s.guru, 0);
 
   return (
     <Section>

@@ -6,9 +6,10 @@ export type SekolahType = {
   name: string;
   alamat: string;
   total_pm: number;
-  total_guru: number;
+  guru: number;
   pk: number;
   pb: number;
+  rute: string;
 };
 
 export const sekolah: SekolahType[] = [
@@ -18,9 +19,10 @@ export const sekolah: SekolahType[] = [
     name: "PAUD KB NURUDHDHOLAM",
     alamat: "Kp. Cioray Tengah RT 002 RW 008",
     total_pm: 34,
-    total_guru: 5,
+    guru: 5,
     pk: 34,
     pb: 0,
+    rute: "2",
   },
   {
     geocode: [-7.055737, 108.014802],
@@ -28,9 +30,10 @@ export const sekolah: SekolahType[] = [
     name: "PAUD KB AL-ANSHORIYAH",
     alamat: "Kp. Cipatik RT 002 RW 002",
     total_pm: 30,
-    total_guru: 4,
+    guru: 4,
     pk: 30,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.056147, 108.029201],
@@ -38,9 +41,10 @@ export const sekolah: SekolahType[] = [
     name: "PAUD KB SEJAHTERA",
     alamat: "Kp. Cioray Warung RT 001 RW 007",
     total_pm: 13,
-    total_guru: 5,
+    guru: 5,
     pk: 13,
     pb: 0,
+    rute: "2",
   },
   {
     geocode: [-7.055748, 108.026164],
@@ -48,9 +52,10 @@ export const sekolah: SekolahType[] = [
     name: "PAUD DARUL ILMI",
     alamat: "Kp. Palalangon RT 003 RW 006",
     total_pm: 20,
-    total_guru: 3,
+    guru: 3,
     pk: 20,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.060075, 108.012735],
@@ -58,9 +63,10 @@ export const sekolah: SekolahType[] = [
     name: "PAUD KB AT TAQWA",
     alamat: "Kp. Sangkali RT 003 RW 001",
     total_pm: 28,
-    total_guru: 4,
+    guru: 4,
     pk: 28,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.054617, 108.013192],
@@ -68,9 +74,10 @@ export const sekolah: SekolahType[] = [
     name: "TK ASSAJIDIN",
     alamat: "Kp. Cipatik RT 003 RW 003",
     total_pm: 21,
-    total_guru: 5,
+    guru: 5,
     pk: 21,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.055566, 108.022569],
@@ -78,9 +85,10 @@ export const sekolah: SekolahType[] = [
     name: "TK AISIYAH",
     alamat: "Kp. Ibnu Sina RT 001 RW 005",
     total_pm: 18,
-    total_guru: 4,
+    guru: 4,
     pk: 18,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.053017, 108.019351],
@@ -88,9 +96,10 @@ export const sekolah: SekolahType[] = [
     name: "RA ASSALAM KERSAMANAH",
     alamat: "Kp. Kubang RT 003 RW 004",
     total_pm: 27,
-    total_guru: 4,
+    guru: 4,
     pk: 27,
     pb: 0,
+    rute: "2",
   },
   {
     geocode: [-7.055015, 108.024994],
@@ -98,9 +107,10 @@ export const sekolah: SekolahType[] = [
     name: "RA AS SAADAH",
     alamat: "Kp. Palasari RT 005 RW 006",
     total_pm: 36,
-    total_guru: 5,
+    guru: 5,
     pk: 36,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.048938, 108.023933],
@@ -108,9 +118,10 @@ export const sekolah: SekolahType[] = [
     name: "RA/BA/TA ASSIBYAN",
     alamat: "Kp. Cipoos RT 001 RW 010",
     total_pm: 41,
-    total_guru: 7,
+    guru: 7,
     pk: 41,
     pb: 0,
+    rute: "2",
   },
   {
     geocode: [-7.055375, 108.013813],
@@ -118,9 +129,10 @@ export const sekolah: SekolahType[] = [
     name: "RA AL-FALAH CIPATIK",
     alamat: "Kp. Cipatik RT 002 RW 003",
     total_pm: 12,
-    total_guru: 4,
+    guru: 4,
     pk: 12,
     pb: 0,
+    rute: "1",
   },
   {
     geocode: [-7.046885, 108.027908],
@@ -128,9 +140,10 @@ export const sekolah: SekolahType[] = [
     name: "RA AL-FALAH CIORAY HILIR",
     alamat: "Kp. Cioray Hilir RT 001 RW 011",
     total_pm: 11,
-    total_guru: 4,
+    guru: 4,
     pk: 11,
     pb: 0,
+    rute: "2",
   },
   {
     geocode: [-7.052175, 108.019983],
@@ -138,9 +151,10 @@ export const sekolah: SekolahType[] = [
     name: "SDN 1 NANJUNGJAYA",
     alamat: "Kp. Kubang RT 003 RW 004",
     total_pm: 135,
-    total_guru: 11,
+    guru: 11,
     pk: 68,
     pb: 67,
+    rute: "2",
   },
   {
     geocode: [-7.055714, 108.029172],
@@ -148,9 +162,10 @@ export const sekolah: SekolahType[] = [
     name: "SDN 2 NANJUNGJAYA",
     alamat: "Kp. Cioray Warung RT 001 RW 007",
     total_pm: 194,
-    total_guru: 11,
+    guru: 11,
     pk: 108,
     pb: 86,
+    rute: "2",
   },
   {
     geocode: [-7.058151, 108.014624],
@@ -158,9 +173,10 @@ export const sekolah: SekolahType[] = [
     name: "SDN 3 NANJUNGJAYA",
     alamat: "Kp. Margasari RT 004 RW 001",
     total_pm: 134,
-    total_guru: 10,
+    guru: 10,
     pk: 65,
     pb: 69,
+    rute: "1",
   },
   {
     geocode: [-7.058039, 108.025883],
@@ -168,9 +184,10 @@ export const sekolah: SekolahType[] = [
     name: "SDN 4 NANJUNGJAYA",
     alamat: "Kp. Palalangon RT 004 RW 006",
     total_pm: 94,
-    total_guru: 10,
+    guru: 10,
     pk: 48,
     pb: 46,
+    rute: "1",
   },
   {
     geocode: [-7.048471, 108.023885],
@@ -178,9 +195,10 @@ export const sekolah: SekolahType[] = [
     name: "MIS ASSIBYAN",
     alamat: "Kp. Cipoos RT 001 RW 010",
     total_pm: 118,
-    total_guru: 9,
+    guru: 9,
     pk: 52,
     pb: 66,
+    rute: "2",
   },
   {
     geocode: [-7.053699, 108.022337],
@@ -188,9 +206,10 @@ export const sekolah: SekolahType[] = [
     name: "MIS MUHAMMADIYAH",
     alamat: "Kp. Ciboja RT 003 RW 005",
     total_pm: 80,
-    total_guru: 9,
+    guru: 9,
     pk: 37,
     pb: 43,
+    rute: "1",
   },
   {
     geocode: [-7.053345, 108.018773],
@@ -198,9 +217,10 @@ export const sekolah: SekolahType[] = [
     name: "MIS YPI PST GALMASI",
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 56,
-    total_guru: 6,
+    guru: 6,
     pk: 21,
     pb: 35,
+    rute: "2",
   },
   {
     geocode: [-7.053507, 108.018562],
@@ -208,9 +228,10 @@ export const sekolah: SekolahType[] = [
     name: "MTSS YPI GALMASI",
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 16,
-    total_guru: 11,
+    guru: 11,
     pk: 0,
     pb: 16,
+    rute: "2",
   },
   {
     geocode: [-7.053801, 108.022087],
@@ -218,9 +239,10 @@ export const sekolah: SekolahType[] = [
     name: "SMP IT DARUL ABROR",
     alamat: "Kp. Ciboja RT 003 RW 005",
     total_pm: 216,
-    total_guru: 21,
+    guru: 21,
     pk: 0,
     pb: 216,
+    rute: "1",
   },
   {
     geocode: [-7.053129, 108.018392],
@@ -228,8 +250,9 @@ export const sekolah: SekolahType[] = [
     name: "SMA ISLAM PESANTREN GALMASI",
     alamat: "Kp. Galmasi RT 003 RW 004",
     total_pm: 55,
-    total_guru: 20,
+    guru: 20,
     pk: 0,
     pb: 55,
+    rute: "2",
   },
 ];
