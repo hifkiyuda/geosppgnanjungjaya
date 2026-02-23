@@ -1,4 +1,5 @@
 export type HistoryType = {
+  periode: string;
   week: string;
   mon: string;
   tue: string;
@@ -10,6 +11,7 @@ export type HistoryType = {
 
 export const history: HistoryType[] = [
   {
+    periode: "P-1 W-2",
     week: "12-01-2026 s.d. 17-01-2026",
     mon: "1213",
     tue: "1214",
@@ -19,6 +21,7 @@ export const history: HistoryType[] = [
     sat: "1214",
   },
   {
+    periode: "P-2 W-1",
     week: "19-01-2026 s.d. 24-01-2026",
     mon: "1555",
     tue: "1556",
@@ -28,6 +31,7 @@ export const history: HistoryType[] = [
     sat: "1556",
   },
   {
+    periode: "P-2 W-2",
     week: "26-01-2026 s.d. 31-01-2026",
     mon: "1557",
     tue: "1559",
@@ -37,6 +41,7 @@ export const history: HistoryType[] = [
     sat: "1561",
   },
   {
+    periode: "P-3 W-1",
     week: "02-02-2026 s.d. 07-02-2026",
     mon: "1561",
     tue: "1561",
@@ -46,6 +51,7 @@ export const history: HistoryType[] = [
     sat: "1561",
   },
   {
+    periode: "P-3 W-2",
     week: "09-02-2026 s.d. 14-02-2026",
     mon: "1561",
     tue: "1562",
@@ -53,5 +59,25 @@ export const history: HistoryType[] = [
     thu: "1562",
     fri: "1562",
     sat: "1562",
+  },
+  {
+    periode: "P-4 W-1",
+    week: "16-02-2026 s.d. 21-02-2026",
+    mon: "Libur",
+    tue: "Libur",
+    wed: "Libur",
+    thu: "Libur",
+    fri: "Libur",
+    sat: "Libur",
+  },
+  {
+    periode: "P-4 W-2",
+    week: "23-02-2026 s.d. 28-02-2026",
+    mon: "1561",
+    tue: "1561",
+    wed: "1561",
+    thu: "1561",
+    fri: "1561",
+    sat: "1561",
   },
 ];

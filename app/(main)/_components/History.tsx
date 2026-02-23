@@ -19,6 +19,7 @@ export const History = () => {
           <TableCaption>Riwayat Jumlah Penerima Manfaat.</TableCaption>
           <TableHeader>
             <TableRow>
+              <TableHead>Periode</TableHead>
               <TableHead>Tanggal</TableHead>
               <TableHead>Senin</TableHead>
               <TableHead>Selasa</TableHead>
@@ -31,6 +32,7 @@ export const History = () => {
           <TableBody>
             {history.map((item, index) => (
               <TableRow key={index}>
+                <TableCell>{item.periode}</TableCell>
                 <TableCell>{item.week}</TableCell>
                 <TableCell
                   className={
