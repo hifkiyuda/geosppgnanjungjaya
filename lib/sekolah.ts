@@ -227,10 +227,10 @@ export const sekolah: SekolahType[] = [
     category: "SMP/MTS",
     name: "MTSS YPI GALMASI",
     alamat: "Kp. Galmasi RT 003 RW 004",
-    total_pm: 16,
+    total_pm: 17,
     guru: 11,
     pk: 0,
-    pb: 16,
+    pb: 17,
     rute: "2",
   },
   {
