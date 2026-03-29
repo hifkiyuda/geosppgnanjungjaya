@@ -31,7 +31,7 @@ export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
           <Data label="Balita" value={resultPosyandu.balita} />
           <Data label="Ibu Hamil" value={resultPosyandu.bumil} />
           <Data label="Ibu Menyusui" value={resultPosyandu.busui} />
-          <Data label="Guru" value={guru} />
+          <Data label="Guru & Tenaga Kependidikan" value={guru} />
         </div>
       </CardContent>
     </Card>

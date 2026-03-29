@@ -16,7 +16,7 @@ export type PosyanduPM = {
 export const posyandu: PosyanduType[] = [
   {
     geocode: [-7.060043, 108.01321],
-    name: "Posyandu Tunasjaya",
+    name: "POSYANDU TUNASJAYA",
     alamat: "Kp. Sangkali RT 003 RW 001",
     total_pm: {
       balita: 0,
@@ -26,7 +26,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.05362, 108.015031],
-    name: "Posyandu Dahlia",
+    name: "POSYANDU DAHLIA",
     alamat: "Kp. Cipatik RT 001 RW 002",
     total_pm: {
       balita: 0,
@@ -36,7 +36,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.053635, 108.015769],
-    name: "Posyandu Mawar",
+    name: "POSYANDU MAWAR",
     alamat: "Kp. Cipatik RT 001 RW 003",
     total_pm: {
       balita: 0,
@@ -46,7 +46,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.052582, 108.020663],
-    name: "Posyandu Melati",
+    name: "POSYANDU MELATI",
     alamat: "Kp. Kubang RT 003 RW 004",
     total_pm: {
       balita: 0,
@@ -56,7 +56,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.053834, 108.022219],
-    name: "Posyandu Seroja",
+    name: "POSYANDU SEROJA",
     alamat: "Kp. Ibnusina RT002 RW 005",
     total_pm: {
       balita: 0,
@@ -66,7 +66,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.058082, 108.022978],
-    name: "Posyandu Mandiri",
+    name: "POSYANDU MANDIRI",
     alamat: "Kp. Cikambangan RT 001 RW 006",
     total_pm: {
       balita: 0,
@@ -76,7 +76,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.057697, 108.022517],
-    name: "Posyandu Kenanga",
+    name: "POSYANDU KENANGA",
     alamat: "Kp. Palalangon RT 002 RW 006",
     total_pm: {
       balita: 0,
@@ -86,7 +86,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.055381, 108.027222],
-    name: "Posyandu Sejahtera",
+    name: "POSYANDU SEJAHTERA",
     alamat: "Kp. Cioray Warung RT 001 RW 007",
     total_pm: {
       balita: 0,
@@ -96,7 +96,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.052944, 108.026672],
-    name: "Posyandu Binangkit",
+    name: "POSYANDU BINANGKIT",
     alamat: "Kp. Cioray Tengah RT 002 RW 008",
     total_pm: {
       balita: 0,
@@ -106,7 +106,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.052935, 108.02804],
-    name: "Posyandu Aster",
+    name: "POSYANDU ASTER",
     alamat: "Kp. Cioray Tengah RT 002 RW 009",
     total_pm: {
       balita: 0,
@@ -116,7 +116,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.048151, 108.023886],
-    name: "Posyandu Anggrek",
+    name: "POSYANDU ANGGREK",
     alamat: "Kp. Cipoos RT 002 RW 010",
     total_pm: {
       balita: 0,
@@ -126,7 +126,7 @@ export const posyandu: PosyanduType[] = [
   },
   {
     geocode: [-7.0466, 108.026541],
-    name: "Posyandu Plamboyan",
+    name: "POSYANDU PLAMBOYAN",
     alamat: "Kp. Talun RT 002 RW 011",
     total_pm: {
       balita: 0,

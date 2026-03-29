@@ -1,4 +1,4 @@
-import { Container, Prose, Section } from "@/components/ds";
+import { Container, Section } from "@/components/ds";
 import { MapWrapper } from "@/components/map/MapWrapper";
 import { Card } from "@/components/ui/card";
 import { posyandu } from "@/lib/posyandu";
@@ -8,7 +8,7 @@ import { Stats } from "./_components/Stats";
 import { Target } from "./_components/Target";
 import { History } from "./_components/History";
 import { Schedule } from "./_components/Schedule";
-import { Today } from "@/components/ui/today";
+import { Title } from "./_components/Title";
 
 export interface ResultPosyandu {
   balita: number;
@@ -60,15 +60,10 @@ export default function Home() {
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
-        <Prose>
-          <Today />
-          <h4>
-            Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
-          </h4>
-          <h6 className="text-muted-foreground">
-            SPPG Garut Kersamanah Nanjungjaya Yayasan Always Be Positive
-          </h6>
-        </Prose>
+        {/* Title */}
+        <Title />
+
+        {/* Total */}
         <Total
           resultPosyandu={resultPosyandu}
           resultSekolah={resultSekolah}
@@ -76,20 +71,30 @@ export default function Home() {
           totalP={posyandu.length}
           guru={guru}
         />
+
+        {/* Stats */}
         <Stats
           resultPosyandu={resultPosyandu}
           resultSekolah={resultSekolah}
           guru={guru}
         />
+
+        {/* Map */}
         <Card className="h-[80vh] w-auto py-0 overflow-hidden">
           <MapWrapper />
         </Card>
+
+        {/* Distribution Schedule */}
         <Schedule />
-        <div className="w-full overflow-x-auto">
-          <History />
-        </div>
+
+        {/* School */}
         <div className="w-full overflow-x-auto">
           <Target />
+        </div>
+
+        {/* History */}
+        <div className="w-full overflow-x-auto">
+          <History />
         </div>
       </Container>
     </Section>

@@ -1,4 +1,3 @@
-import { Prose } from "@/components/ds";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Table,

@@ -29,12 +29,12 @@ const customIconSchool = new Icon({
 });
 
 const customIconSchool2 = new Icon({
-  iconUrl: "/icon/pin2.png",
+  iconUrl: "/icon/pin.png",
   iconSize: [24, 24],
 });
 
 const customIconPosyandu = new Icon({
-  iconUrl: "/icon/posyandu.svg",
+  iconUrl: "/icon/pin.png",
   iconSize: [24, 24],
 });
 
@@ -79,7 +79,7 @@ export default function MapGeo() {
   return (
     <MapContainer
       center={[-7.053342, 108.027035]}
-      zoom={14}
+      zoom={15}
       zoomControl={false}
       style={{ width: "100%", height: "100%", zIndex: 0 }}
     >
@@ -99,9 +99,9 @@ export default function MapGeo() {
         }}
       />
       <Marker position={LOKASI_SPPG} icon={customIconSppg}>
-        <Tooltip permanent direction="top" offset={[0, -10]}>
+        {/* <Tooltip permanent direction="top" offset={[0, -10]}>
           SPPG NANJUNGJAYA CIORAY
-        </Tooltip>
+        </Tooltip> */}
         <Popup>
           <p className="font-semibold">
             SPPG Garut Kersamanah Nanjungjaya Yayasan Always Be Positive
@@ -127,9 +127,6 @@ export default function MapGeo() {
                   : customIconSchool
               }
             >
-              <Tooltip permanent direction="top" offset={[0, -10]}>
-                {s.name}
-              </Tooltip>
               <Popup>
                 <p className="font-semibold">{s.name}</p>
                 <ul>
@@ -168,7 +165,7 @@ export default function MapGeo() {
                 <ul>
                   <li>Alamat: {p.alamat}</li>
                   <li>{`Jarak: ${d.toFixed(0)} M (${minutes.toFixed(
-                    1
+                    1,
                   )} Menit)`}</li>
                   <li>Balita: {p.total_pm.balita}</li>
                   <li>
