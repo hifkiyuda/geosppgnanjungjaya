@@ -28,7 +28,7 @@ export const Schedule = () => {
               {rute1Skl.map((r, i) => {
                 const total = r.pk + r.pb + r.guru;
                 return (
-                  <li key={i} className="text-zinc-800 text-sm">
+                  <li key={i} className="text-sm">
                     {`${r.name} `}
                     <span className="font-semibold">({total})</span>
                   </li>
@@ -38,7 +38,7 @@ export const Schedule = () => {
               {rute1Pyd.map((r, i) => {
                 const total = r.balita + r.bumil + r.busui;
                 return (
-                  <li key={i} className="text-zinc-800 text-sm">
+                  <li key={i} className="text-sm">
                     {`${r.name} `}
                     <span className="font-semibold">({total})</span>
                   </li>
@@ -48,7 +48,7 @@ export const Schedule = () => {
           </Prose>
           <Prose>
             <p>
-              {`Rute 1: ${
+              {`Rute 2: ${
                 rute2Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru, 0) +
                 rute2Pyd.reduce(
                   (sum, r) => sum + r.balita + r.bumil + r.busui,
@@ -60,7 +60,7 @@ export const Schedule = () => {
               {rute2Skl.map((r, i) => {
                 const total = r.pk + r.pb + r.guru;
                 return (
-                  <li key={i} className="text-zinc-800 text-sm">
+                  <li key={i} className="text-sm">
                     {`${r.name} `}
                     <span className="font-semibold">({total})</span>
                   </li>
@@ -70,7 +70,7 @@ export const Schedule = () => {
               {rute2Pyd.map((r, i) => {
                 const total = r.balita + r.bumil + r.busui;
                 return (
-                  <li key={i} className="text-zinc-800 text-sm">
+                  <li key={i} className="text-sm">
                     {`${r.name} `}
                     <span className="font-semibold">({total})</span>
                   </li>

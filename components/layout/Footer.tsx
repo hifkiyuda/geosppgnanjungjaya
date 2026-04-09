@@ -1,6 +1,7 @@
 import { EnvelopeClosedIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { Container } from "../ds";
+import { Hyp } from "../Hyp";
 
 export const Footer = () => {
   return (
@@ -29,14 +30,7 @@ export const Footer = () => {
         <div className="flex items-center space-x-2">
           <small>Developed by</small>
           <a href="https://hifki.vercel.app">
-            <Image
-              src={"/hyp.png"}
-              alt="Hifki Yuda Pratama"
-              width={1000}
-              height={0}
-              className="w-8 h-auto"
-              priority
-            />
+            <Hyp />
           </a>
         </div>
       </Container>

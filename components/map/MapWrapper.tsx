@@ -18,7 +18,7 @@ export const MapWrapper = () => {
       <MapGeo />
       <div className="absolute top-0 right-0 z-20 p-2 sm:p-4 w-fit">
         <Link href={pathname.startsWith("/map") ? "/" : "/map"}>
-          <Button className="cursor-pointer" variant={"outline"}>
+          <Button className="cursor-pointer bg-white hover:bg-white dark:hover:bg-white text-black">
             <Maximize2 />
           </Button>
         </Link>

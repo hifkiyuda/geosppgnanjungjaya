@@ -78,8 +78,8 @@ export const History = () => {
                 </TableCell>
                 <TableCell className="max-w-[200px] whitespace-normal">
                   {item.ket.map((i, idx) => (
-                    <p key={idx} className="break-words">
-                      {i}
+                    <p key={idx} className="wrap-break-word">
+                      {i ? i : "-"}
                     </p>
                   ))}
                 </TableCell>

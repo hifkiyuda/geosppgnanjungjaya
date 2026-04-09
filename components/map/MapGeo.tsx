@@ -43,12 +43,12 @@ export default function MapGeo() {
   const LOKASI_SPPG: [number, number] = [-7.053342, 108.027035];
   const dataKelurahan = geoJsonKelurahan as FeatureCollection;
 
-  const filteredKelurahan: FeatureCollection = {
-    type: "FeatureCollection",
-    features: dataKelurahan.features.filter(
-      (f: Feature) => f.properties?.kd_kecamatan === KODE_KECAMATAN_KERSAMANAH,
-    ),
-  };
+  // const filteredKelurahan: FeatureCollection = {
+  //   type: "FeatureCollection",
+  //   features: dataKelurahan.features.filter(
+  //     (f: Feature) => f.properties?.kd_kecamatan === KODE_KECAMATAN_KERSAMANAH,
+  //   ),
+  // };
 
   const haversineDistance = (coord1: LatLngTuple, coord2: LatLngTuple) => {
     const toRad = (x: number) => (x * Math.PI) / 180;

@@ -21,5 +21,7 @@ export const Today = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <p className="text-[#071e49] font-medium">{`${date} WIB`}</p>;
+  return (
+    <p className="text-[#071e49] dark:text-[#b5e0ea] font-medium">{`${date} WIB`}</p>
+  );
 };
