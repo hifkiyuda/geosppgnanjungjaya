@@ -7,6 +7,7 @@ export type HistoryType = {
   thu: string;
   fri: string;
   sat: string;
+  ket: string[];
 };
 
 export const history: HistoryType[] = [
@@ -19,6 +20,7 @@ export const history: HistoryType[] = [
     thu: "1214",
     fri: "Libur",
     sat: "1214",
+    ket: ["Jumat: Libur Nasional (Isra Mi'raj Nabi Muhammad SAW)"],
   },
   {
     periode: "P-2 W-1",
@@ -29,6 +31,7 @@ export const history: HistoryType[] = [
     thu: "1556",
     fri: "1556",
     sat: "1556",
+    ket: [""],
   },
   {
     periode: "P-2 W-2",
@@ -39,6 +42,7 @@ export const history: HistoryType[] = [
     thu: "1559",
     fri: "1561",
     sat: "1561",
+    ket: [""],
   },
   {
     periode: "P-3 W-1",
@@ -49,6 +53,7 @@ export const history: HistoryType[] = [
     thu: "1561",
     fri: "1561",
     sat: "1561",
+    ket: [""],
   },
   {
     periode: "P-3 W-2",
@@ -59,6 +64,7 @@ export const history: HistoryType[] = [
     thu: "1562",
     fri: "1562",
     sat: "1562",
+    ket: [""],
   },
   {
     periode: "P-4 W-1",
@@ -69,6 +75,9 @@ export const history: HistoryType[] = [
     thu: "Libur",
     fri: "Libur",
     sat: "Libur",
+    ket: [
+      "Libur sekolah sebelum Ramadhan, tidak ada pendistribusian ke posyandu",
+    ],
   },
   {
     periode: "P-4 W-2",
@@ -79,6 +88,7 @@ export const history: HistoryType[] = [
     thu: "1561",
     fri: "1561",
     sat: "1561",
+    ket: [""],
   },
   {
     periode: "P-5 W-1",
@@ -89,6 +99,7 @@ export const history: HistoryType[] = [
     thu: "1562",
     fri: "1562",
     sat: "1562",
+    ket: [""],
   },
   {
     periode: "P-5 W-2",
@@ -99,6 +110,7 @@ export const history: HistoryType[] = [
     thu: "1562",
     fri: "1562",
     sat: "1562",
+    ket: [""],
   },
   {
     periode: "P-6 W-1",
@@ -109,6 +121,7 @@ export const history: HistoryType[] = [
     thu: "Libur",
     fri: "Libur",
     sat: "Libur",
+    ket: ["Rabu-Sabtu: Cuti bersama Idul Fitri dan hari raya Nyepi"],
   },
   {
     periode: "P-6 W-2",
@@ -119,6 +132,7 @@ export const history: HistoryType[] = [
     thu: "Libur",
     fri: "Libur",
     sat: "Libur",
+    ket: ["Senin-Sabtu: Cuti bersama Idul Fitri"],
   },
   {
     periode: "P-7 W-1",
@@ -129,6 +143,11 @@ export const history: HistoryType[] = [
     thu: "1566",
     fri: "Libur",
     sat: "Libur",
+    ket: [
+      "Senin: Cuti bersama Idul Fitri",
+      "Jumat: Libur Nasional (Wafat Isa Almasih)",
+      "Sabtu: Sekolah libur",
+    ],
   },
   {
     periode: "P-7 W-2",
@@ -137,7 +156,36 @@ export const history: HistoryType[] = [
     tue: "1566",
     wed: "1566",
     thu: "1566",
-    fri: "1566",
-    sat: "1566",
+    fri: "1548",
+    sat: "Libur",
+    ket: ["Jumat: PAUD KB SEJAHTERA libur", "Sabtu: Sekolah libur"],
+  },
+  {
+    periode: "P-8 W-1",
+    week: "13-04-2026 s.d. 18-04-2026",
+    mon: "2289",
+    tue: "2289",
+    wed: "2289",
+    thu: "2289",
+    fri: "2271",
+    sat: "802",
+    ket: [
+      "Jumat: PAUD KB SEJAHTERA libur",
+      "Sabtu: Hanya posyandu, sekolah libur",
+    ],
+  },
+  {
+    periode: "P-8 W-2",
+    week: "20-04-2026 s.d. 25-04-2026",
+    mon: "2289",
+    tue: "2289",
+    wed: "2289",
+    thu: "2289",
+    fri: "2271",
+    sat: "802",
+    ket: [
+      "Jumat: PAUD KB SEJAHTERA libur",
+      "Sabtu: Hanya posyandu, sekolah libur",
+    ],
   },
 ];

@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/table";
 import { sekolah } from "@/lib/sekolah";
 
-export const Target = () => {
+export const Sekolah = () => {
   const totalSiswa = sekolah.reduce((sum, item) => sum + item.total_pm, 0);
   const totalGuru = sekolah.reduce((sum, item) => sum + item.guru, 0);
   const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
@@ -26,8 +26,8 @@ export const Target = () => {
             <TableRow>
               <TableHead className="w-[100px]">No</TableHead>
               <TableHead>Nama Sekolah</TableHead>
-              <TableHead>Porsi Kecil</TableHead>
-              <TableHead>Porsi Besar</TableHead>
+              <TableHead>Porsi Kecil (PK)</TableHead>
+              <TableHead>Porsi Besar (PB)</TableHead>
               <TableHead>Total</TableHead>
               <TableHead>Alamat</TableHead>
             </TableRow>

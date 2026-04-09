@@ -238,10 +238,10 @@ export const sekolah: SekolahType[] = [
     category: "SMP/MTS",
     name: "SMP IT DARUL ABROR",
     alamat: "Kp. Ciboja RT 003 RW 005",
-    total_pm: 216,
-    guru: 21,
+    total_pm: 144,
+    guru: 14,
     pk: 0,
-    pb: 216,
+    pb: 144,
     rute: "1",
   },
   {

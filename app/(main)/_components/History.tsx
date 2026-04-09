@@ -26,6 +26,7 @@ export const History = () => {
               <TableHead>Kamis</TableHead>
               <TableHead>Jumat</TableHead>
               <TableHead>Sabtu</TableHead>
+              <TableHead>Keterangan</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -74,6 +75,13 @@ export const History = () => {
                   }
                 >
                   {item.sat}
+                </TableCell>
+                <TableCell className="max-w-[200px] whitespace-normal">
+                  {item.ket.map((i, idx) => (
+                    <p key={idx} className="break-words">
+                      {i}
+                    </p>
+                  ))}
                 </TableCell>
               </TableRow>
             ))}

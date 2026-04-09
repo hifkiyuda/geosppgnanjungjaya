@@ -20,22 +20,22 @@ import geoJsonKelurahan from "@/data/32.05_kelurahan.json";
 
 const customIconSppg = new Icon({
   iconUrl: "/icon/sppg.svg",
-  iconSize: [24, 24],
+  iconSize: [20, 20],
 });
 
 const customIconSchool = new Icon({
   iconUrl: "/icon/pin.png",
-  iconSize: [24, 24],
+  iconSize: [18, 18],
 });
 
 const customIconSchool2 = new Icon({
   iconUrl: "/icon/pin.png",
-  iconSize: [24, 24],
+  iconSize: [18, 18],
 });
 
 const customIconPosyandu = new Icon({
-  iconUrl: "/icon/pin.png",
-  iconSize: [24, 24],
+  iconUrl: "/icon/pin2.png",
+  iconSize: [28, 28],
 });
 
 export default function MapGeo() {
@@ -99,9 +99,9 @@ export default function MapGeo() {
         }}
       />
       <Marker position={LOKASI_SPPG} icon={customIconSppg}>
-        {/* <Tooltip permanent direction="top" offset={[0, -10]}>
+        <Tooltip permanent direction="top" offset={[0, -10]}>
           SPPG NANJUNGJAYA CIORAY
-        </Tooltip> */}
+        </Tooltip>
         <Popup>
           <p className="font-semibold">
             SPPG Garut Kersamanah Nanjungjaya Yayasan Always Be Positive
@@ -127,6 +127,9 @@ export default function MapGeo() {
                   : customIconSchool
               }
             >
+              <Tooltip permanent direction="top" offset={[0, -10]}>
+                {s.name}
+              </Tooltip>
               <Popup>
                 <p className="font-semibold">{s.name}</p>
                 <ul>
@@ -153,13 +156,16 @@ export default function MapGeo() {
         );
       })}
 
-      {/* {posyandu.map((p, id) => {
+      {posyandu.map((p, id) => {
         const d = haversineDistance(LOKASI_SPPG, p.geocode);
         const minutes = estimateMinutes(d);
 
         return (
           <div key={id}>
             <Marker position={p.geocode} icon={customIconPosyandu}>
+              <Tooltip permanent direction="top" offset={[0, -10]}>
+                {p.name}
+              </Tooltip>
               <Popup>
                 <p className="font-semibold">{p.name}</p>
                 <ul>
@@ -167,13 +173,10 @@ export default function MapGeo() {
                   <li>{`Jarak: ${d.toFixed(0)} M (${minutes.toFixed(
                     1,
                   )} Menit)`}</li>
-                  <li>Balita: {p.total_pm.balita}</li>
+                  <li>Balita: {p.balita}</li>
+                  <li>Ibu Hamil & Menyusui: {p.bumil + p.busui}</li>
                   <li>
-                    Ibu Hamil & Menyusui: {p.total_pm.bumil + p.total_pm.busui}
-                  </li>
-                  <li>
-                    Total Penerima Manfaat:{" "}
-                    {p.total_pm.balita + p.total_pm.bumil + p.total_pm.busui}
+                    Total Penerima Manfaat: {p.balita + p.bumil + p.busui}
                   </li>
                 </ul>
               </Popup>
@@ -189,7 +192,7 @@ export default function MapGeo() {
             />
           </div>
         );
-      })} */}
+      })}
 
       {/* <GeoJSON
         data={filteredKelurahan}

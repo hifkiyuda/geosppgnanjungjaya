@@ -5,10 +5,12 @@ import { posyandu } from "@/lib/posyandu";
 import { sekolah } from "@/lib/sekolah";
 import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
-import { Target } from "./_components/Target";
+import { Sekolah } from "./_components/Sekolah";
 import { History } from "./_components/History";
 import { Schedule } from "./_components/Schedule";
 import { Title } from "./_components/Title";
+import { Posyandu } from "./_components/Posyandu";
+import { Header } from "@/components/layout/Header";
 
 export interface ResultPosyandu {
   balita: number;
@@ -34,9 +36,9 @@ export interface ResultSekolah {
 export default function Home() {
   const resultPosyandu: ResultPosyandu = posyandu.reduce(
     (acc, item) => {
-      acc.balita += item.total_pm.balita;
-      acc.bumil += item.total_pm.bumil;
-      acc.busui += item.total_pm.busui;
+      acc.balita += item.balita;
+      acc.bumil += item.bumil;
+      acc.busui += item.busui;
       return acc;
     },
     { balita: 0, bumil: 0, busui: 0 },
@@ -58,45 +60,53 @@ export default function Home() {
   const guru = sekolah.reduce((sum, s) => sum + s.guru, 0);
 
   return (
-    <Section>
-      <Container className="grid gap-6 sm:gap-8">
-        {/* Title */}
-        <Title />
+    <>
+      <Header />
+      <Section>
+        <Container className="grid gap-6 sm:gap-8">
+          {/* Title */}
+          <Title />
 
-        {/* Total */}
-        <Total
-          resultPosyandu={resultPosyandu}
-          resultSekolah={resultSekolah}
-          totalS={sekolah.length}
-          totalP={posyandu.length}
-          guru={guru}
-        />
+          {/* Total */}
+          <Total
+            resultPosyandu={resultPosyandu}
+            resultSekolah={resultSekolah}
+            totalS={sekolah.length}
+            totalP={posyandu.length}
+            guru={guru}
+          />
 
-        {/* Stats */}
-        <Stats
-          resultPosyandu={resultPosyandu}
-          resultSekolah={resultSekolah}
-          guru={guru}
-        />
+          {/* Stats */}
+          <Stats
+            resultPosyandu={resultPosyandu}
+            resultSekolah={resultSekolah}
+            guru={guru}
+          />
 
-        {/* Map */}
-        <Card className="h-[80vh] w-auto py-0 overflow-hidden">
-          <MapWrapper />
-        </Card>
+          {/* Map */}
+          <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+            <MapWrapper />
+          </Card>
 
-        {/* Distribution Schedule */}
-        <Schedule />
+          {/* Distribution Schedule */}
+          <Schedule />
 
-        {/* School */}
-        <div className="w-full overflow-x-auto">
-          <Target />
-        </div>
+          {/* School */}
+          <div className="w-full overflow-x-auto">
+            <Sekolah />
+          </div>
 
-        {/* History */}
-        <div className="w-full overflow-x-auto">
-          <History />
-        </div>
-      </Container>
-    </Section>
+          {/* Posyandu */}
+          <div className="w-full overflow-x-auto">
+            <Posyandu />
+          </div>
+
+          {/* History */}
+          <div className="w-full overflow-x-auto">
+            <History />
+          </div>
+        </Container>
+      </Section>
+    </>
   );
 }
