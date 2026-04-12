@@ -19,7 +19,7 @@ export const Logo = () => {
         alt="Badan Gizi Nasional"
         width={1000}
         height={1000}
-        className="h-16 w-full"
+        className="h-14 w-full"
         priority
       />
       <Image
@@ -27,7 +27,7 @@ export const Logo = () => {
         alt="Yayasan Always Be Positive"
         width={1000}
         height={1000}
-        className={`${resolvedTheme === "dark" ? "h-14" : "h-16"} w-auto dark:bg-white rounded-full`}
+        className={`${resolvedTheme === "dark" ? "h-12" : "h-14"} w-auto dark:bg-white rounded-full`}
         priority
       />
     </div>

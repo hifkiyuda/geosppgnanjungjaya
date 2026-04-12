@@ -23,17 +23,12 @@ const customIconSppg = new Icon({
   iconSize: [20, 20],
 });
 
-const customIconSchool = new Icon({
-  iconUrl: "/icon/pin.png",
-  iconSize: [18, 18],
+const customIconPosyandu = new Icon({
+  iconUrl: "/icon/pin2.png",
+  iconSize: [28, 28],
 });
 
-const customIconSchool2 = new Icon({
-  iconUrl: "/icon/pin.png",
-  iconSize: [18, 18],
-});
-
-export default function MapGeo() {
+export default function MapGeo2() {
   const KODE_KECAMATAN_KERSAMANAH = "013";
   const LOKASI_SPPG: [number, number] = [-7.053342, 108.027035];
   const dataKelurahan = geoJsonKelurahan as FeatureCollection;
@@ -108,38 +103,33 @@ export default function MapGeo() {
           </ul>
         </Popup>
       </Marker>
-      {sekolah.map((s, id) => {
-        const d = haversineDistance(LOKASI_SPPG, s.geocode);
+      {posyandu.map((p, id) => {
+        const d = haversineDistance(LOKASI_SPPG, p.geocode);
         const minutes = estimateMinutes(d);
 
         return (
           <div key={id}>
-            <Marker
-              position={s.geocode}
-              icon={
-                s.category === "PAUD/TK/RA"
-                  ? customIconSchool2
-                  : customIconSchool
-              }
-            >
+            <Marker position={p.geocode} icon={customIconPosyandu}>
               <Tooltip permanent direction="top" offset={[0, -10]}>
-                {s.name}
+                {p.name}
               </Tooltip>
               <Popup>
-                <p className="font-semibold">{s.name}</p>
+                <p className="font-semibold">{p.name}</p>
                 <ul>
-                  <li>Alamat: {s.alamat}</li>
+                  <li>Alamat: {p.alamat}</li>
                   <li>{`Jarak: ${d.toFixed(0)} M (${minutes.toFixed(
                     1,
                   )} Menit)`}</li>
-                  <li>Kategori: {s.category}</li>
-                  <li>Jumlah Siswa: {s.total_pm} Orang</li>
-                  <li>Jumlah Guru dan Tendik: {s.guru} Orang</li>
+                  <li>Balita: {p.balita}</li>
+                  <li>Ibu Hamil & Menyusui: {p.bumil + p.busui}</li>
+                  <li>
+                    Total Penerima Manfaat: {p.balita + p.bumil + p.busui}
+                  </li>
                 </ul>
               </Popup>
             </Marker>
             <Polyline
-              positions={[LOKASI_SPPG, s.geocode]}
+              positions={[LOKASI_SPPG, p.geocode]}
               pathOptions={{
                 color: "blue",
                 weight: 1,

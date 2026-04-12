@@ -11,6 +11,7 @@ import { Schedule } from "./_components/Schedule";
 import { Title } from "./_components/Title";
 import { Posyandu } from "./_components/Posyandu";
 import { Header } from "@/components/layout/Header";
+import { MapWrapper2 } from "@/components/map/MapWrapper2";
 
 export interface ResultPosyandu {
   balita: number;
@@ -83,10 +84,27 @@ export default function Home() {
             guru={guru}
           />
 
-          {/* Map */}
-          <Card className="h-[80vh] w-auto py-0 overflow-hidden">
-            <MapWrapper />
-          </Card>
+          <div className="grid xl:grid-cols-2 gap-4">
+            {/* Map */}
+            <div>
+              <small className="text-center w-full inline-block font-semibold text-muted-foreground">
+                Peta Geospasial Sekolah
+              </small>
+              <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+                <MapWrapper />
+              </Card>
+            </div>
+
+            {/* Map2 */}
+            <div>
+              <small className="text-center w-full inline-block font-semibold text-muted-foreground">
+                Peta Geospasial Posyandu
+              </small>
+              <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+                <MapWrapper2 />
+              </Card>
+            </div>
+          </div>
 
           {/* Distribution Schedule */}
           <Schedule />
