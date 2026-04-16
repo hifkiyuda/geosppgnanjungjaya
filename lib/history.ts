@@ -92,7 +92,7 @@ export const history: HistoryType[] = [
   },
   {
     periode: "P-5 W-1",
-    week: "02-03-2026 s.d. 07-02-2026",
+    week: "02-03-2026 s.d. 07-03-2026",
     mon: "1562",
     tue: "1562",
     wed: "1562",
@@ -103,7 +103,7 @@ export const history: HistoryType[] = [
   },
   {
     periode: "P-5 W-2",
-    week: "09-03-2026 s.d. 14-02-2026",
+    week: "09-03-2026 s.d. 14-03-2026",
     mon: "1562",
     tue: "1562",
     wed: "1562",
