@@ -114,7 +114,7 @@ export const history: HistoryType[] = [
   },
   {
     periode: "P-6 W-1",
-    week: "16-02-2026 s.d. 21-02-2026",
+    week: "16-03-2026 s.d. 21-03-2026",
     mon: "1562",
     tue: "1562",
     wed: "Libur",
@@ -125,7 +125,7 @@ export const history: HistoryType[] = [
   },
   {
     periode: "P-6 W-2",
-    week: "23-02-2026 s.d. 28-02-2026",
+    week: "23-03-2026 s.d. 28-03-2026",
     mon: "Libur",
     tue: "Libur",
     wed: "Libur",
@@ -136,7 +136,7 @@ export const history: HistoryType[] = [
   },
   {
     periode: "P-7 W-1",
-    week: "30-02-2026 s.d. 04-03-2026",
+    week: "30-03-2026 s.d. 04-04-2026",
     mon: "Libur",
     tue: "1566",
     wed: "1566",
