@@ -4,6 +4,7 @@ import "./globals.css";
 import { Main } from "@/components/ds";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "@/components/layout/Header";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           <Main>{children}</Main>
           <Footer />
         </ThemeProvider>

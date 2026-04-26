@@ -10,7 +10,6 @@ import { History } from "./_components/History";
 import { Schedule } from "./_components/Schedule";
 import { Title } from "./_components/Title";
 import { Posyandu } from "./_components/Posyandu";
-import { Header } from "@/components/layout/Header";
 import { MapWrapper2 } from "@/components/map/MapWrapper2";
 
 export interface ResultPosyandu {
@@ -61,70 +60,67 @@ export default function Home() {
   const guru = sekolah.reduce((sum, s) => sum + s.guru, 0);
 
   return (
-    <>
-      <Header />
-      <Section>
-        <Container className="grid gap-6 sm:gap-8">
-          {/* Title */}
-          <Title />
+    <Section>
+      <Container className="grid gap-6 sm:gap-8">
+        {/* Title */}
+        <Title />
 
-          {/* Total */}
-          <Total
-            resultPosyandu={resultPosyandu}
-            resultSekolah={resultSekolah}
-            totalS={sekolah.length}
-            totalP={posyandu.length}
-            guru={guru}
-          />
+        {/* Total */}
+        <Total
+          resultPosyandu={resultPosyandu}
+          resultSekolah={resultSekolah}
+          totalS={sekolah.length}
+          totalP={posyandu.length}
+          guru={guru}
+        />
 
-          {/* Stats */}
-          <Stats
-            resultPosyandu={resultPosyandu}
-            resultSekolah={resultSekolah}
-            guru={guru}
-          />
+        {/* Stats */}
+        <Stats
+          resultPosyandu={resultPosyandu}
+          resultSekolah={resultSekolah}
+          guru={guru}
+        />
 
-          <div className="grid xl:grid-cols-2 gap-4">
-            {/* Map */}
-            <div>
-              <small className="text-center w-full inline-block font-semibold text-muted-foreground">
-                Peta Geospasial Sekolah
-              </small>
-              <Card className="h-[80vh] w-auto py-0 overflow-hidden">
-                <MapWrapper />
-              </Card>
-            </div>
-
-            {/* Map2 */}
-            <div>
-              <small className="text-center w-full inline-block font-semibold text-muted-foreground">
-                Peta Geospasial Posyandu
-              </small>
-              <Card className="h-[80vh] w-auto py-0 overflow-hidden">
-                <MapWrapper2 />
-              </Card>
-            </div>
+        <div className="grid xl:grid-cols-2 gap-4">
+          {/* Map */}
+          <div>
+            <small className="text-center w-full inline-block font-semibold text-muted-foreground">
+              Peta Geospasial Sekolah
+            </small>
+            <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+              <MapWrapper />
+            </Card>
           </div>
 
-          {/* Distribution Schedule */}
-          <Schedule />
-
-          {/* School */}
-          <div className="w-full overflow-x-auto">
-            <Sekolah />
+          {/* Map2 */}
+          <div>
+            <small className="text-center w-full inline-block font-semibold text-muted-foreground">
+              Peta Geospasial Posyandu
+            </small>
+            <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+              <MapWrapper2 />
+            </Card>
           </div>
+        </div>
 
-          {/* Posyandu */}
-          <div className="w-full overflow-x-auto">
-            <Posyandu />
-          </div>
+        {/* Distribution Schedule */}
+        <Schedule />
 
-          {/* History */}
-          <div className="w-full overflow-x-auto">
-            <History />
-          </div>
-        </Container>
-      </Section>
-    </>
+        {/* School */}
+        <div className="w-full overflow-x-auto">
+          <Sekolah />
+        </div>
+
+        {/* Posyandu */}
+        <div className="w-full overflow-x-auto">
+          <Posyandu />
+        </div>
+
+        {/* History */}
+        <div className="w-full overflow-x-auto">
+          <History />
+        </div>
+      </Container>
+    </Section>
   );
 }
