@@ -15,7 +15,7 @@ export const posyandu: PosyanduType[] = [
     geocode: [-7.060043, 108.01321],
     name: "POSYANDU TUNASJAYA",
     alamat: "Kp. Sangkali RT 003 RW 001",
-    balita: 42,
+    balita: 44,
     bumil: 7,
     busui: 9,
     rute: "1",
