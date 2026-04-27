@@ -191,10 +191,10 @@ export const history: HistoryType[] = [
   {
     periode: "P-9 W-1",
     week: "27-04-2026 s.d. 02-05-2026",
-    mon: "2290",
-    tue: "2259",
-    wed: "2290",
-    thu: "2290",
+    mon: "2291",
+    tue: "2260",
+    wed: "2291",
+    thu: "2291",
     fri: "Libur",
     sat: "803",
     ket: [
@@ -206,11 +206,11 @@ export const history: HistoryType[] = [
   {
     periode: "P-9 W-2",
     week: "04-05-2026 s.d. 09-05-2026",
-    mon: "2290",
-    tue: "2290",
-    wed: "2290",
-    thu: "2290",
-    fri: "2272",
+    mon: "2291",
+    tue: "2291",
+    wed: "2291",
+    thu: "2291",
+    fri: "2273",
     sat: "803",
     ket: [
       "Jumat: PAUD KB SEJAHTERA libur",
