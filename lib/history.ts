@@ -217,4 +217,33 @@ export const history: HistoryType[] = [
       "Sabtu: Hanya posyandu, sekolah libur",
     ],
   },
+  {
+    periode: "P-10 W-1",
+    week: "11-05-2026 s.d. 16-05-2026",
+    mon: "2300",
+    tue: "2300",
+    wed: "2300",
+    thu: "Libur",
+    fri: "Libur",
+    sat: "811",
+    ket: [
+      "Kamis: Libur Nasional (Kenaikan Isa Almasih)",
+      "Jumat: Libur Nasional (Cuti Bersama Kenaikan Isa Almasih)",
+      "Sabtu: Hanya posyandu, sekolah libur",
+    ],
+  },
+  {
+    periode: "P-10 W-2",
+    week: "18-05-2026 s.d. 23-05-2026",
+    mon: "2300",
+    tue: "2300",
+    wed: "2300",
+    thu: "2300",
+    fri: "2282",
+    sat: "811",
+    ket: [
+      "Jumat: PAUD KB SEJAHTERA libur",
+      "Sabtu: Hanya posyandu, sekolah libur",
+    ],
+  },
 ];

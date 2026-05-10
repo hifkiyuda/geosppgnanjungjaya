@@ -9,7 +9,7 @@ export const Header = () => {
       <Container className="flex items-center justify-between">
         <Logo />
         <div className="flex items-center gap-8">
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link
               href="/"
               className="text-zinc-600 dark:text-zinc-400 hover:text-foreground dark:hover:text-foreground"
@@ -22,7 +22,7 @@ export const Header = () => {
             >
               Menu
             </Link>
-          </div>
+          </div> */}
           <ThemeToggle />
         </div>
       </Container>
