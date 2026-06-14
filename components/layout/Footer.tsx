@@ -9,13 +9,13 @@ export const Footer = () => {
       <Container className="flex items-center justify-between">
         <div>
           <a
-            href="https://www.instagram.com/sppgnanjungjaya/"
+            href="https://www.instagram.com/sppgnanjungjaya1/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5"
           >
             <InstagramLogoIcon className="h-4 w-4" />{" "}
-            <small>sppgnanjungjaya</small>
+            <small>sppgnanjungjaya1</small>
           </a>
           <a
             href="mailto:sppg.nanjungjaya@gmail.com"

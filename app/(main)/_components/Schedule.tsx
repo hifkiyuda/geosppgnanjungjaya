@@ -56,7 +56,7 @@ export const Schedule = () => {
                 const total = r.pk + r.pb + r.guru;
                 return (
                   <li key={i} className="text-sm">
-                    <Badge className={cn("mr-2", badgeColors[r.category])}>
+                    <Badge className={cn("mr-1", badgeColors[r.category])}>
                       {r.category}
                     </Badge>
                     {`${r.name} `}
@@ -94,7 +94,7 @@ export const Schedule = () => {
                 const total = r.pk + r.pb + r.guru;
                 return (
                   <li key={i} className="text-sm">
-                    <Badge className={cn("mr-2", badgeColors[r.category])}>
+                    <Badge className={cn("mr-1", badgeColors[r.category])}>
                       {r.category}
                     </Badge>
                     {`${r.name} `}

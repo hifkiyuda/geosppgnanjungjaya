@@ -25,7 +25,7 @@ export const Header = () => {
             <span className="font-light text-sm text-zinc-600 dark:text-zinc-400">
               SPPG Garut Kersamanah
             </span>
-            <span className="font-semibold text-xl text-zinc-800 dark:text-zinc-200">
+            <span className="font-semibold text-lg text-zinc-800 dark:text-zinc-200">
               Nanjungjaya 1
             </span>
           </Link>

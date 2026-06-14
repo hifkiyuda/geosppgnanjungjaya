@@ -12,7 +12,7 @@ export const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/30 to-black/80" />
-      <CardContent className="relative h-full flex flex-col justify-center sm:justify-end text-white space-y-2 items-center sm:items-start text-center sm:text-left">
+      <CardContent className="relative h-full flex flex-col justify-end text-white space-y-2">
         <Logo />
         <Prose>
           <Today />
