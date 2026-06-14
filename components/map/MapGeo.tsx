@@ -74,7 +74,7 @@ export default function MapGeo() {
   return (
     <MapContainer
       center={[-7.053342, 108.027035]}
-      zoom={14}
+      zoom={13}
       zoomControl={false}
       style={{ width: "100%", height: "100%", zIndex: 0 }}
     >
@@ -85,7 +85,7 @@ export default function MapGeo() {
       <ZoomControl position="bottomright" />
       <Circle
         center={LOKASI_SPPG}
-        radius={2000}
+        radius={4000}
         pathOptions={{
           color: "blue",
           weight: 1,
