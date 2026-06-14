@@ -1,25 +1,14 @@
-"use client";
-
 import Image from "next/image";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 export const Logo = () => {
-  const { resolvedTheme } = useTheme();
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  return isClient ? (
+  return (
     <div className="flex items-center gap-2">
       <Image
         src={"/bgn.png"}
         alt="Badan Gizi Nasional"
         width={1000}
         height={1000}
-        className="h-14 w-full"
+        className="h-16 w-auto"
         priority
       />
       <Image
@@ -27,9 +16,9 @@ export const Logo = () => {
         alt="Yayasan Always Be Positive"
         width={1000}
         height={1000}
-        className={`${resolvedTheme === "dark" ? "h-12" : "h-14"} w-auto dark:bg-white rounded-full`}
+        className="h-14 w-auto bg-white rounded-full"
         priority
       />
     </div>
-  ) : null;
+  );
 };

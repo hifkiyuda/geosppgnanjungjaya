@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { Container } from "../ds";
-import { Logo } from "../Logo";
 import { ThemeToggle } from "../ThemeToggle";
 
 export const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b">
       <Container className="flex items-center justify-between">
-        <Logo />
-        <div className="flex items-center gap-8">
+        <div className="flex items-center justify-between gap-8 w-full">
           {/* <div className="flex items-center gap-4">
             <Link
               href="/"
@@ -23,6 +21,14 @@ export const Header = () => {
               Menu
             </Link>
           </div> */}
+          <Link href="/" className="flex flex-col -space-y-1">
+            <span className="font-light text-sm text-zinc-600 dark:text-zinc-400">
+              SPPG Garut Kersamanah
+            </span>
+            <span className="font-semibold text-xl text-zinc-800 dark:text-zinc-200">
+              Nanjungjaya 1
+            </span>
+          </Link>
           <ThemeToggle />
         </div>
       </Container>

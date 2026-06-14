@@ -8,9 +8,9 @@ import { Stats } from "./_components/Stats";
 import { Sekolah } from "./_components/Sekolah";
 import { History } from "./_components/History";
 import { Schedule } from "./_components/Schedule";
-import { Title } from "./_components/Title";
 import { Posyandu } from "./_components/Posyandu";
 import { MapWrapper2 } from "@/components/map/MapWrapper2";
+import { Hero } from "./_components/Hero";
 
 export interface ResultPosyandu {
   balita: number;
@@ -62,8 +62,8 @@ export default function Home() {
   return (
     <Section>
       <Container className="grid gap-6 sm:gap-8">
-        {/* Title */}
-        <Title />
+        {/* Hero */}
+        <Hero />
 
         {/* Total */}
         <Total
@@ -87,7 +87,7 @@ export default function Home() {
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Sekolah (Radius: 4 Km)
             </small>
-            <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper />
             </Card>
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Posyandu (Radius: 1 Km)
             </small>
-            <Card className="h-[80vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper2 />
             </Card>
           </div>
