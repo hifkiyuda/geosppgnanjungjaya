@@ -7,10 +7,11 @@ import { Total } from "./_components/Total";
 import { Stats } from "./_components/Stats";
 import { Sekolah } from "./_components/Sekolah";
 import { History } from "./_components/History";
-import { Schedule } from "./_components/Schedule";
+import { Route } from "./_components/Route";
 import { Posyandu } from "./_components/Posyandu";
 import { MapWrapper2 } from "@/components/map/MapWrapper2";
 import { Hero } from "./_components/Hero";
+import { Schedule } from "./_components/Schedule";
 
 export interface ResultPosyandu {
   balita: number;
@@ -103,8 +104,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Distribution Schedule */}
-        <Schedule />
+        {/* Distribution Route */}
+        <Route />
 
         {/* School */}
         <div className="w-full overflow-x-auto">
@@ -119,6 +120,11 @@ export default function Home() {
         {/* History */}
         <div className="w-full overflow-x-auto">
           <History />
+        </div>
+
+        {/* Schedule */}
+        <div className="w-full overflow-x-auto">
+          <Schedule />
         </div>
       </Container>
     </Section>

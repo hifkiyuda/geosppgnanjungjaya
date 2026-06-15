@@ -7,7 +7,8 @@ export const Title = () => {
       <Today />
       <h4>Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)</h4>
       <h6 className="text-muted-foreground">
-        SPPG Garut Kersamanah Nanjungjaya 1 Yayasan Always Be Positive
+        Satuan Pelayanan Pemenuhan Gizi (SPPG) Garut Kersamanah Nanjungjaya 1 -
+        Yayasan Always Be Positive
       </h6>
     </Prose>
   );
