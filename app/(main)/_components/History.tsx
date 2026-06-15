@@ -15,7 +15,7 @@ export const History = () => {
     <Card>
       <CardContent className="space-y-4">
         <Table>
-          <TableCaption>Riwayat Jumlah Penerima Manfaat.</TableCaption>
+          <TableCaption>Riwayat Jumlah Penerima Manfaat</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead>Periode</TableHead>

@@ -10,6 +10,15 @@ export type SekolahType = {
   pk: number;
   pb: number;
   rute: string;
+  cluster: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8";
+  // 1: Cioray Tengah
+  // 2: Cioray Hilir-Cipoos
+  // 3: Kubang-Galmasi
+  // 4: Ibnusina-Ciboja
+  // 5: Cipatik-Margasari-Sangkali
+  // 6: Palasari-Palalangon
+  // 7: Cioray Warung
+  // 8: Desa Sukamaju
 };
 
 export const sekolah: SekolahType[] = [
@@ -23,6 +32,7 @@ export const sekolah: SekolahType[] = [
     pk: 34,
     pb: 0,
     rute: "1",
+    cluster: "1",
   },
   {
     geocode: [-7.055737, 108.014802],
@@ -34,6 +44,7 @@ export const sekolah: SekolahType[] = [
     pk: 28,
     pb: 0,
     rute: "1",
+    cluster: "5",
   },
   {
     geocode: [-7.056147, 108.029201],
@@ -45,6 +56,7 @@ export const sekolah: SekolahType[] = [
     pk: 13,
     pb: 0,
     rute: "2",
+    cluster: "7",
   },
   {
     geocode: [-7.055748, 108.026164],
@@ -56,6 +68,7 @@ export const sekolah: SekolahType[] = [
     pk: 23,
     pb: 0,
     rute: "2",
+    cluster: "6",
   },
   {
     geocode: [-7.060075, 108.012735],
@@ -67,6 +80,7 @@ export const sekolah: SekolahType[] = [
     pk: 27,
     pb: 0,
     rute: "1",
+    cluster: "5",
   },
   {
     geocode: [-7.054617, 108.013192],
@@ -78,6 +92,7 @@ export const sekolah: SekolahType[] = [
     pk: 21,
     pb: 0,
     rute: "1",
+    cluster: "5",
   },
   {
     geocode: [-7.055566, 108.022569],
@@ -89,6 +104,7 @@ export const sekolah: SekolahType[] = [
     pk: 18,
     pb: 0,
     rute: "1",
+    cluster: "4",
   },
   {
     geocode: [-7.053017, 108.019351],
@@ -100,6 +116,7 @@ export const sekolah: SekolahType[] = [
     pk: 27,
     pb: 0,
     rute: "1",
+    cluster: "3",
   },
   {
     geocode: [-7.055015, 108.024994],
@@ -111,6 +128,7 @@ export const sekolah: SekolahType[] = [
     pk: 37,
     pb: 0,
     rute: "2",
+    cluster: "6",
   },
   {
     geocode: [-7.048938, 108.023933],
@@ -122,6 +140,7 @@ export const sekolah: SekolahType[] = [
     pk: 42,
     pb: 0,
     rute: "1",
+    cluster: "2",
   },
   {
     geocode: [-7.055375, 108.013813],
@@ -133,6 +152,7 @@ export const sekolah: SekolahType[] = [
     pk: 12,
     pb: 0,
     rute: "1",
+    cluster: "5",
   },
   {
     geocode: [-7.046885, 108.027908],
@@ -144,6 +164,7 @@ export const sekolah: SekolahType[] = [
     pk: 11,
     pb: 0,
     rute: "1",
+    cluster: "2",
   },
   {
     geocode: [-7.052175, 108.019983],
@@ -155,6 +176,7 @@ export const sekolah: SekolahType[] = [
     pk: 69,
     pb: 67,
     rute: "1",
+    cluster: "3",
   },
   {
     geocode: [-7.055714, 108.029172],
@@ -166,6 +188,7 @@ export const sekolah: SekolahType[] = [
     pk: 109,
     pb: 86,
     rute: "2",
+    cluster: "7",
   },
   {
     geocode: [-7.058151, 108.014624],
@@ -177,6 +200,7 @@ export const sekolah: SekolahType[] = [
     pk: 66,
     pb: 67,
     rute: "1",
+    cluster: "5",
   },
   {
     geocode: [-7.058039, 108.025883],
@@ -188,6 +212,7 @@ export const sekolah: SekolahType[] = [
     pk: 48,
     pb: 46,
     rute: "2",
+    cluster: "6",
   },
   {
     geocode: [-7.048471, 108.023885],
@@ -199,6 +224,7 @@ export const sekolah: SekolahType[] = [
     pk: 52,
     pb: 66,
     rute: "1",
+    cluster: "2",
   },
   {
     geocode: [-7.053699, 108.022337],
@@ -210,6 +236,7 @@ export const sekolah: SekolahType[] = [
     pk: 37,
     pb: 43,
     rute: "1",
+    cluster: "4",
   },
   {
     geocode: [-7.053345, 108.018773],
@@ -221,6 +248,7 @@ export const sekolah: SekolahType[] = [
     pk: 21,
     pb: 34,
     rute: "1",
+    cluster: "3",
   },
   {
     geocode: [-7.053507, 108.018562],
@@ -232,6 +260,7 @@ export const sekolah: SekolahType[] = [
     pk: 0,
     pb: 17,
     rute: "1",
+    cluster: "3",
   },
   {
     geocode: [-7.053801, 108.022087],
@@ -243,6 +272,7 @@ export const sekolah: SekolahType[] = [
     pk: 0,
     pb: 147,
     rute: "1",
+    cluster: "4",
   },
   {
     geocode: [-7.053129, 108.018392],
@@ -254,6 +284,7 @@ export const sekolah: SekolahType[] = [
     pk: 0,
     pb: 55,
     rute: "1",
+    cluster: "3",
   },
   // SUKAMAJU
   {
@@ -266,6 +297,7 @@ export const sekolah: SekolahType[] = [
     pk: 16,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.072324, 108.045076],
@@ -277,6 +309,7 @@ export const sekolah: SekolahType[] = [
     pk: 25,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.075702, 108.043959],
@@ -288,6 +321,7 @@ export const sekolah: SekolahType[] = [
     pk: 7,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.080466, 108.046692],
@@ -299,6 +333,7 @@ export const sekolah: SekolahType[] = [
     pk: 20,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.08348, 108.04058],
@@ -310,6 +345,7 @@ export const sekolah: SekolahType[] = [
     pk: 15,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.079435, 108.041572],
@@ -321,6 +357,7 @@ export const sekolah: SekolahType[] = [
     pk: 77,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.077074, 108.046468],
@@ -332,6 +369,7 @@ export const sekolah: SekolahType[] = [
     pk: 52,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.066543, 108.045363],
@@ -343,6 +381,7 @@ export const sekolah: SekolahType[] = [
     pk: 30,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.075652, 108.043793],
@@ -354,6 +393,7 @@ export const sekolah: SekolahType[] = [
     pk: 36,
     pb: 0,
     rute: "2",
+    cluster: "8",
   },
   {
     geocode: [-7.075411, 108.045742],
@@ -365,6 +405,7 @@ export const sekolah: SekolahType[] = [
     pk: 0,
     pb: 155,
     rute: "2",
+    cluster: "8",
   },
 ];
 

@@ -13,11 +13,6 @@ export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
   return (
     <Card>
       <CardContent className="grid gap-4 sm:gap-6">
-        <Prose>
-          <p className="text-muted-foreground">
-            Sebaran jumlah penerima manfaat:
-          </p>
-        </Prose>
         <div className="grid  grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
           <Data
             label="PAUD/TK/RA"

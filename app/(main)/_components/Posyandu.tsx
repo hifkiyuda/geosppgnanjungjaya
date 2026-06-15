@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Table,
@@ -20,7 +21,7 @@ export const Posyandu = () => {
     <Card>
       <CardContent>
         <Table>
-          <TableCaption>Daftar Posyandu Penerima Manfaat.</TableCaption>
+          <TableCaption>Daftar Posyandu Penerima Manfaat</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">No</TableHead>
@@ -36,7 +37,14 @@ export const Posyandu = () => {
             {posyandu.map((item, index) => (
               <TableRow key={item.name}>
                 <TableCell>{index + 1}</TableCell>
-                <TableCell className="font-medium">{item.name}</TableCell>
+                <TableCell className="font-medium">
+                  {item.name}
+                  <div>
+                    <Badge className="mr-2 bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
+                      POSYANDU
+                    </Badge>
+                  </div>
+                </TableCell>
                 <TableCell>{item.balita}</TableCell>
                 <TableCell>{item.bumil}</TableCell>
                 <TableCell>{item.busui}</TableCell>

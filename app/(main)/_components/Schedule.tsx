@@ -39,10 +39,9 @@ export const Schedule = () => {
   return (
     <Card>
       <CardContent className="space-y-4">
-        <p className="text-muted-foreground">Rute distribusi paket MBG</p>
         <div className="grid sm:grid-cols-2 gap-4">
           <Prose>
-            <p>
+            <p className="font-semibold text-zinc-700 dark:text-zinc-300">
               {`Rute 1: ${
                 rute1Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru, 0) +
                 rute1Pyd.reduce(
@@ -51,20 +50,116 @@ export const Schedule = () => {
                 )
               } Paket`}
             </p>
-            <ol>
-              {sortedRute1Skl.map((r, i) => {
-                const total = r.pk + r.pb + r.guru;
-                return (
-                  <li key={i} className="text-sm">
-                    <Badge className={cn("mr-1", badgeColors[r.category])}>
-                      {r.category}
-                    </Badge>
-                    {`${r.name} `}
-                    <span className="font-semibold">({total})</span>
-                  </li>
-                );
-              })}
 
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 1: Cioray Tengah
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "1")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 2: Cioray Hilir-Cipoos
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "2")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 3: Kubang-Galmasi
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "3")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 4: Ibnusina-Ciboja
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "4")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 5: Cipatik-Margasari-Sangkali
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "5")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Posyandu
+              </small>
               {rute1Pyd.map((r, i) => {
                 const total = r.balita + r.bumil + r.busui;
                 return (
@@ -80,7 +175,7 @@ export const Schedule = () => {
             </ol>
           </Prose>
           <Prose>
-            <p>
+            <p className="font-semibold text-zinc-700 dark:text-zinc-300">
               {`Rute 2: ${
                 rute2Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru, 0) +
                 rute2Pyd.reduce(
@@ -89,20 +184,74 @@ export const Schedule = () => {
                 )
               } Paket`}
             </p>
-            <ol>
-              {sortedRute2Skl.map((r, i) => {
-                const total = r.pk + r.pb + r.guru;
-                return (
-                  <li key={i} className="text-sm">
-                    <Badge className={cn("mr-1", badgeColors[r.category])}>
-                      {r.category}
-                    </Badge>
-                    {`${r.name} `}
-                    <span className="font-semibold">({total})</span>
-                  </li>
-                );
-              })}
 
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 6: Palasari-Palalangon
+              </small>
+              {sortedRute2Skl
+                .filter((r) => r.cluster === "6")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 7: Cioray Warung
+              </small>
+              {sortedRute2Skl
+                .filter((r) => r.cluster === "7")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster 8: Desa Sukamaju
+              </small>
+              {sortedRute2Skl
+                .filter((r) => r.cluster === "8")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Posyandu
+              </small>
               {rute2Pyd.map((r, i) => {
                 const total = r.balita + r.bumil + r.busui;
                 return (
