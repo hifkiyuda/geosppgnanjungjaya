@@ -22,7 +22,7 @@ export const sekolah: SekolahType[] = [
     guru: 5,
     pk: 34,
     pb: 0,
-    rute: "2",
+    rute: "1",
   },
   {
     geocode: [-7.055737, 108.014802],
