@@ -259,7 +259,7 @@ export const schedule: ScheduleType[] = [
     wed: "Masuk",
     thu: "Masuk",
     fri: "Masuk",
-    sat: "Libur",
+    sat: "Masuk",
   },
   {
     name: "PAUD KB AT TAQWA WALURAN",
