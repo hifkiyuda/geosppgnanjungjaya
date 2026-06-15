@@ -88,7 +88,7 @@ export default function Home() {
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Sekolah (Radius: 4 Km)
             </small>
-            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[30vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper />
             </Card>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Posyandu (Radius: 1 Km)
             </small>
-            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[30vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper2 />
             </Card>
           </div>
