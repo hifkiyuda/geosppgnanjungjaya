@@ -33,7 +33,7 @@ export const schedule: ScheduleType[] = [
     tue: "Masuk",
     wed: "Masuk",
     thu: "Masuk",
-    fri: "Masuk",
+    fri: "Libur",
     sat: "Libur",
   },
   {
@@ -42,7 +42,7 @@ export const schedule: ScheduleType[] = [
     tue: "Masuk",
     wed: "Masuk",
     thu: "Masuk",
-    fri: "Libur",
+    fri: "Masuk",
     sat: "Libur",
   },
   {
