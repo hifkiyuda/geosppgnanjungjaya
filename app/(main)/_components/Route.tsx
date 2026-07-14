@@ -53,94 +53,52 @@ export const Route = () => {
 
             <ol>
               <small className="font-semibold text-muted-foreground">
-                Cluster 1: Cioray Tengah
-              </small>
-              {sortedRute1Skl
-                .filter((r) => r.cluster === "1")
-                .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
-
-                  return (
-                    <li key={i} className="text-sm">
-                      <Badge className={cn("mr-1", badgeColors[r.category])}>
-                        {r.category}
-                      </Badge>
-                      {`${r.name} `}
-                      <span className="font-semibold">({total})</span>
-                    </li>
-                  );
-                })}
-            </ol>
-
-            <ol>
-              <small className="font-semibold text-muted-foreground">
-                Cluster 2: Cioray Hilir-Cipoos
-              </small>
-              {sortedRute1Skl
-                .filter((r) => r.cluster === "2")
-                .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
-
-                  return (
-                    <li key={i} className="text-sm">
-                      <Badge className={cn("mr-1", badgeColors[r.category])}>
-                        {r.category}
-                      </Badge>
-                      {`${r.name} `}
-                      <span className="font-semibold">({total})</span>
-                    </li>
-                  );
-                })}
-            </ol>
-
-            <ol>
-              <small className="font-semibold text-muted-foreground">
-                Cluster 3: Kubang-Galmasi
-              </small>
-              {sortedRute1Skl
-                .filter((r) => r.cluster === "3")
-                .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
-
-                  return (
-                    <li key={i} className="text-sm">
-                      <Badge className={cn("mr-1", badgeColors[r.category])}>
-                        {r.category}
-                      </Badge>
-                      {`${r.name} `}
-                      <span className="font-semibold">({total})</span>
-                    </li>
-                  );
-                })}
-            </ol>
-
-            <ol>
-              <small className="font-semibold text-muted-foreground">
-                Cluster 4: Ibnusina-Ciboja
-              </small>
-              {sortedRute1Skl
-                .filter((r) => r.cluster === "4")
-                .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
-
-                  return (
-                    <li key={i} className="text-sm">
-                      <Badge className={cn("mr-1", badgeColors[r.category])}>
-                        {r.category}
-                      </Badge>
-                      {`${r.name} `}
-                      <span className="font-semibold">({total})</span>
-                    </li>
-                  );
-                })}
-            </ol>
-
-            <ol>
-              <small className="font-semibold text-muted-foreground">
-                Cluster 5: Cipatik-Margasari-Sangkali
+                Cluster Palasari-Palalangon
               </small>
               {sortedRute1Skl
                 .filter((r) => r.cluster === "5")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster Ibnusina-Ciboja
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "6")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster Cipatik-Margasari-Sangkali
+              </small>
+              {sortedRute1Skl
+                .filter((r) => r.cluster === "7")
                 .map((r, i) => {
                   const total = r.pk + r.pb + r.guru;
 
@@ -174,6 +132,7 @@ export const Route = () => {
               })}
             </ol>
           </Prose>
+
           <Prose>
             <p className="font-semibold text-zinc-700 dark:text-zinc-300">
               {`Rute 2: ${
@@ -187,10 +146,10 @@ export const Route = () => {
 
             <ol>
               <small className="font-semibold text-muted-foreground">
-                Cluster 6: Palasari-Palalangon
+                Cluster Cioray Tengah
               </small>
               {sortedRute2Skl
-                .filter((r) => r.cluster === "6")
+                .filter((r) => r.cluster === "1")
                 .map((r, i) => {
                   const total = r.pk + r.pb + r.guru;
 
@@ -208,10 +167,10 @@ export const Route = () => {
 
             <ol>
               <small className="font-semibold text-muted-foreground">
-                Cluster 7: Cioray Warung
+                Cluster Cioray Warung
               </small>
               {sortedRute2Skl
-                .filter((r) => r.cluster === "7")
+                .filter((r) => r.cluster === "2")
                 .map((r, i) => {
                   const total = r.pk + r.pb + r.guru;
 
@@ -229,10 +188,31 @@ export const Route = () => {
 
             <ol>
               <small className="font-semibold text-muted-foreground">
-                Cluster 8: Desa Sukamaju
+                Cluster Cioray Hilir-Cipoos
               </small>
               {sortedRute2Skl
-                .filter((r) => r.cluster === "8")
+                .filter((r) => r.cluster === "3")
+                .map((r, i) => {
+                  const total = r.pk + r.pb + r.guru;
+
+                  return (
+                    <li key={i} className="text-sm">
+                      <Badge className={cn("mr-1", badgeColors[r.category])}>
+                        {r.category}
+                      </Badge>
+                      {`${r.name} `}
+                      <span className="font-semibold">({total})</span>
+                    </li>
+                  );
+                })}
+            </ol>
+
+            <ol>
+              <small className="font-semibold text-muted-foreground">
+                Cluster Kubang-Galmasi
+              </small>
+              {sortedRute2Skl
+                .filter((r) => r.cluster === "4")
                 .map((r, i) => {
                   const total = r.pk + r.pb + r.guru;
 
