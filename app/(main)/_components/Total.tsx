@@ -24,13 +24,18 @@ export const Total = ({
     resultSekolah["SD/MI"].total_pm +
     resultSekolah["SMP/MTS"].total_pm +
     resultSekolah["SMA/MA"].total_pm;
+  const orlep = 28;
 
   return (
     <Card>
-      <CardContent className="grid grid-cols-3 gap-4 sm:gap-6">
+      <CardContent className="grid grid-cols-4 gap-4 sm:gap-6">
         <Data label="Peserta Didik" value={totalSekolah} />
         <Data label="3B Posyandu" value={totalPosyandu} />
-        <Data label="Total" value={totalSekolah + totalPosyandu + guru} />
+        <Data label="Uji Organoleptik" value={orlep} />
+        <Data
+          label="Total"
+          value={totalSekolah + totalPosyandu + guru + orlep}
+        />
       </CardContent>
     </Card>
   );
