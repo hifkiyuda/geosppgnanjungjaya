@@ -23,10 +23,10 @@ export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
           <Data label="SMA/MA" value={resultSekolah["SMA/MA"].total_pm} />
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+          <Data label="Guru & Tenaga Kependidikan" value={guru} />
           <Data label="Balita" value={resultPosyandu.balita} />
           <Data label="Ibu Hamil" value={resultPosyandu.bumil} />
           <Data label="Ibu Menyusui" value={resultPosyandu.busui} />
-          <Data label="Guru & Tenaga Kependidikan" value={guru} />
         </div>
       </CardContent>
     </Card>

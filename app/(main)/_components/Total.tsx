@@ -29,7 +29,7 @@ export const Total = ({
   return (
     <Card>
       <CardContent className="grid grid-cols-4 gap-4 sm:gap-6">
-        <Data label="Peserta Didik" value={totalSekolah} />
+        <Data label="Sekolah" value={totalSekolah + guru} />
         <Data label="3B Posyandu" value={totalPosyandu} />
         <Data label="Uji Organoleptik" value={orlep} />
         <Data
