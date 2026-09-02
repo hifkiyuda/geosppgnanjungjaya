@@ -11,7 +11,7 @@ export const Today = () => {
     const updateTime = () => {
       const now = new Date();
       setFormattedDate(
-        format(now, "EEEE, dd/MM/yyyy. HH:mm:ss", { locale: id }),
+        format(now, "EEEE, dd MMM yyyy - HH:mm:ss", { locale: id }),
       );
     };
 
@@ -21,5 +21,5 @@ export const Today = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <p className="text-[#b5e0ea] font-medium">{`${date} WIB`}</p>;
+  return <p>{`${date} WIB`}</p>;
 };

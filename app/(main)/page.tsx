@@ -82,13 +82,13 @@ export default function Home() {
           guru={guru}
         />
 
-        <div className="grid xl:grid-cols-2 gap-4">
+        <div className="grid xl:grid-cols-2 gap-4 p-4">
           {/* Map */}
           <div>
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Sekolah (Radius: ±2 Km)
             </small>
-            <Card className="h-[40vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper />
             </Card>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
               Peta Geospasial Posyandu (Radius: ±800 M)
             </small>
-            <Card className="h-[40vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[50vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper2 />
             </Card>
           </div>

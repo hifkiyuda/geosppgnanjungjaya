@@ -28,10 +28,10 @@ export const Total = ({
 
   return (
     <Card>
-      <CardContent className="grid grid-cols-4 gap-4 sm:gap-6">
+      <CardContent className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 wrap-break-word">
         <Data label="Sekolah" value={totalSekolah + guru} />
         <Data label="3B Posyandu" value={totalPosyandu} />
-        <Data label="Uji Organoleptik" value={orlep} />
+        <Data label="Organoleptik" value={orlep} />
         <Data
           label="Total"
           value={totalSekolah + totalPosyandu + guru + orlep}

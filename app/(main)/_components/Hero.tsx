@@ -12,16 +12,16 @@ export const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/30 to-black/80" />
-      <CardContent className="relative h-full flex flex-col justify-end text-white space-y-2">
+      <CardContent className="relative h-full flex flex-col justify-end text-white space-y-2 px-4 sm:px-6">
         <Logo />
         <Prose>
           <Today />
           <h4>
             Geospasial Penerima Manfaat Program Makan Bergizi Gratis (MBG)
           </h4>
-          <h6 className="text-zinc-200 font-light">
+          <p className="text-zinc-200 font-light">
             SPPG Garut Kersamanah Nanjungjaya 1 Yayasan Always Be Positive
-          </h6>
+          </p>
         </Prose>
       </CardContent>
     </Card>

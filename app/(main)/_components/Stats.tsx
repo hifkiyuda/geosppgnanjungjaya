@@ -13,7 +13,7 @@ export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
   return (
     <Card>
       <CardContent className="grid gap-4 sm:gap-6">
-        <div className="grid  grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 wrap-break-word">
           <Data
             label="PAUD/TK/RA"
             value={resultSekolah["PAUD/TK/RA"].total_pm}
@@ -22,7 +22,7 @@ export const Stats = ({ resultPosyandu, resultSekolah, guru }: StatsProps) => {
           <Data label="SMP/MTS" value={resultSekolah["SMP/MTS"].total_pm} />
           <Data label="SMA/MA" value={resultSekolah["SMA/MA"].total_pm} />
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 wrap-break-word">
           <Data label="Guru & Tenaga Kependidikan" value={guru} />
           <Data label="Balita" value={resultPosyandu.balita} />
           <Data label="Ibu Hamil" value={resultPosyandu.bumil} />
