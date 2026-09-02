@@ -85,7 +85,7 @@ export default function MapGeo() {
       <ZoomControl position="bottomright" />
       <Circle
         center={LOKASI_SPPG}
-        radius={4000}
+        radius={2000}
         pathOptions={{
           color: "blue",
           weight: 1,

@@ -16,13 +16,13 @@ export const MapWrapper = () => {
   return (
     <div className="h-full w-full relative">
       <MapGeo />
-      {/* <div className="absolute top-0 right-0 z-20 p-2 sm:p-4 w-fit">
-        <Link href={pathname.startsWith("/map") ? "/" : "/map"}>
+      <div className="absolute top-0 right-0 z-20 p-2 sm:p-4 w-fit">
+        <Link href={pathname.startsWith("/geo/sekolah") ? "/" : "/geo/sekolah"}>
           <Button className="cursor-pointer bg-white hover:bg-white dark:hover:bg-white text-black">
             <Maximize2 />
           </Button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

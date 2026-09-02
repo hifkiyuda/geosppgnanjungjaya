@@ -16,13 +16,15 @@ export const MapWrapper2 = () => {
   return (
     <div className="h-full w-full relative">
       <MapGeo2 />
-      {/* <div className="absolute top-0 right-0 z-20 p-2 sm:p-4 w-fit">
-        <Link href="">
+      <div className="absolute top-0 right-0 z-20 p-2 sm:p-4 w-fit">
+        <Link
+          href={pathname.startsWith("/geo/posyandu") ? "/" : "/geo/posyandu"}
+        >
           <Button className="cursor-pointer bg-white hover:bg-white dark:hover:bg-white text-black">
             <Maximize2 />
           </Button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

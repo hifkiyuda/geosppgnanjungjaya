@@ -86,9 +86,9 @@ export default function Home() {
           {/* Map */}
           <div>
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
-              Peta Geospasial Sekolah (Radius: 4 Km)
+              Peta Geospasial Sekolah (Radius: ±2 Km)
             </small>
-            <Card className="h-[30vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[40vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper />
             </Card>
           </div>
@@ -96,9 +96,9 @@ export default function Home() {
           {/* Map2 */}
           <div>
             <small className="text-center w-full inline-block font-semibold text-muted-foreground">
-              Peta Geospasial Posyandu (Radius: 1 Km)
+              Peta Geospasial Posyandu (Radius: ±800 M)
             </small>
-            <Card className="h-[30vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
+            <Card className="h-[40vh] sm:h-[60vh] w-auto py-0 overflow-hidden">
               <MapWrapper2 />
             </Card>
           </div>

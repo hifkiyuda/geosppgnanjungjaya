@@ -18,7 +18,7 @@ export const Header = () => {
               </span>
             </Link>
           </div>
-          <div className="flex items-center space-x-6 lg:space-x-8">
+          <div className="flex items-center space-x-6 sm:space-x-8">
             <Link
               href="https://www.bgn.go.id/radar-mbg/?provinsi=32&kabko=32.05&kecamatan=32.05.13&kelurahan=32.05.13.2002"
               target="_blank"
