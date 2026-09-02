@@ -26,7 +26,8 @@ export const Sekolah = () => {
   const totalGuru = sekolah.reduce((sum, item) => sum + item.guru, 0);
   const totalPk = sekolah.reduce((sum, item) => sum + item.pk, 0);
   const totalPb = sekolah.reduce((sum, item) => sum + item.pb, 0) + totalGuru;
-  const grandTotal = totalSiswa + totalGuru;
+  const totalOrlep = sekolah.reduce((sum) => sum + 1, 0);
+  const grandTotal = totalSiswa + totalGuru + totalOrlep;
 
   return (
     <Card>
@@ -39,6 +40,7 @@ export const Sekolah = () => {
               <TableHead>Nama Sekolah</TableHead>
               <TableHead>Porsi Kecil (PK)</TableHead>
               <TableHead>Porsi Besar (PB)</TableHead>
+              <TableHead>Organoleptik (PB)</TableHead>
               <TableHead>Total</TableHead>
               <TableHead>Alamat</TableHead>
             </TableRow>
@@ -57,6 +59,7 @@ export const Sekolah = () => {
                 </TableCell>
                 <TableCell>{item.pk}</TableCell>
                 <TableCell>{item.pb + item.guru}</TableCell>
+                <TableCell>1</TableCell>
                 <TableCell>{item.total_pm + item.guru}</TableCell>
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
@@ -66,6 +69,7 @@ export const Sekolah = () => {
               <TableCell>TOTAL</TableCell>
               <TableCell>{totalPk}</TableCell>
               <TableCell>{totalPb}</TableCell>
+              <TableCell>{totalOrlep}</TableCell>
               <TableCell>{grandTotal}</TableCell>
             </TableRow>
           </TableBody>

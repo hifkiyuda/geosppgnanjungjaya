@@ -15,7 +15,8 @@ export const Posyandu = () => {
   const totalBalita = posyandu.reduce((sum, item) => sum + item.balita, 0);
   const totalBumil = posyandu.reduce((sum, item) => sum + item.bumil, 0);
   const totalBusui = posyandu.reduce((sum, item) => sum + item.busui, 0);
-  const grandTotal = totalBalita + totalBumil + totalBusui;
+  const totalOrlep = posyandu.reduce((sum) => sum + 1, 0);
+  const grandTotal = totalBalita + totalBumil + totalBusui + totalOrlep;
 
   return (
     <Card>
@@ -29,6 +30,7 @@ export const Posyandu = () => {
               <TableHead>Balita (PK)</TableHead>
               <TableHead>Ibu Hamil (PB)</TableHead>
               <TableHead>Ibu Menyusui (PB)</TableHead>
+              <TableHead>Organoleptik (PB)</TableHead>
               <TableHead>Total</TableHead>
               <TableHead>Alamat</TableHead>
             </TableRow>
@@ -48,6 +50,7 @@ export const Posyandu = () => {
                 <TableCell>{item.balita}</TableCell>
                 <TableCell>{item.bumil}</TableCell>
                 <TableCell>{item.busui}</TableCell>
+                <TableCell>1</TableCell>
                 <TableCell>{item.balita + item.bumil + item.busui}</TableCell>
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
@@ -58,6 +61,7 @@ export const Posyandu = () => {
               <TableCell>{totalBalita}</TableCell>
               <TableCell>{totalBumil}</TableCell>
               <TableCell>{totalBusui}</TableCell>
+              <TableCell>{totalOrlep}</TableCell>
               <TableCell>{grandTotal}</TableCell>
             </TableRow>
           </TableBody>

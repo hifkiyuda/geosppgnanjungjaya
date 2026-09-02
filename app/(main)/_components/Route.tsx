@@ -43,9 +43,9 @@ export const Route = () => {
           <Prose>
             <p className="font-semibold text-zinc-700 dark:text-zinc-300">
               {`Rute 1: ${
-                rute1Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru, 0) +
+                rute1Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru + 1, 0) +
                 rute1Pyd.reduce(
-                  (sum, r) => sum + r.balita + r.bumil + r.busui,
+                  (sum, r) => sum + r.balita + r.bumil + r.busui + 1,
                   0,
                 )
               } Paket`}
@@ -58,7 +58,7 @@ export const Route = () => {
               {sortedRute1Skl
                 .filter((r) => r.cluster === "5")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -79,7 +79,7 @@ export const Route = () => {
               {sortedRute1Skl
                 .filter((r) => r.cluster === "6")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -100,7 +100,7 @@ export const Route = () => {
               {sortedRute1Skl
                 .filter((r) => r.cluster === "7")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -119,7 +119,7 @@ export const Route = () => {
                 Posyandu
               </small>
               {rute1Pyd.map((r, i) => {
-                const total = r.balita + r.bumil + r.busui;
+                const total = r.balita + r.bumil + r.busui + 1;
                 return (
                   <li key={i} className="text-sm">
                     <Badge className="mr-2 bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
@@ -136,9 +136,9 @@ export const Route = () => {
           <Prose>
             <p className="font-semibold text-zinc-700 dark:text-zinc-300">
               {`Rute 2: ${
-                rute2Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru, 0) +
+                rute2Skl.reduce((sum, r) => sum + r.pk + r.pb + r.guru + 1, 0) +
                 rute2Pyd.reduce(
-                  (sum, r) => sum + r.balita + r.bumil + r.busui,
+                  (sum, r) => sum + r.balita + r.bumil + r.busui + 1,
                   0,
                 )
               } Paket`}
@@ -151,7 +151,7 @@ export const Route = () => {
               {sortedRute2Skl
                 .filter((r) => r.cluster === "1")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -172,7 +172,7 @@ export const Route = () => {
               {sortedRute2Skl
                 .filter((r) => r.cluster === "2")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -193,7 +193,7 @@ export const Route = () => {
               {sortedRute2Skl
                 .filter((r) => r.cluster === "3")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -214,7 +214,7 @@ export const Route = () => {
               {sortedRute2Skl
                 .filter((r) => r.cluster === "4")
                 .map((r, i) => {
-                  const total = r.pk + r.pb + r.guru;
+                  const total = r.pk + r.pb + r.guru + 1;
 
                   return (
                     <li key={i} className="text-sm">
@@ -233,7 +233,7 @@ export const Route = () => {
                 Posyandu
               </small>
               {rute2Pyd.map((r, i) => {
-                const total = r.balita + r.bumil + r.busui;
+                const total = r.balita + r.bumil + r.busui + 1;
                 return (
                   <li key={i} className="text-sm">
                     <Badge className="mr-2 bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300">
