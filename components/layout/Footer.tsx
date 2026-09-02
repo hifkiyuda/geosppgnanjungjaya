@@ -1,5 +1,4 @@
 import { EnvelopeClosedIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 import { Container } from "../ds";
 import { Hyp } from "../Hyp";
 

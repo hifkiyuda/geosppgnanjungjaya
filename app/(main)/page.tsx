@@ -123,9 +123,9 @@ export default function Home() {
         </div>
 
         {/* Schedule */}
-        <div className="w-full overflow-x-auto">
+        {/* <div className="w-full overflow-x-auto">
           <Schedule />
-        </div>
+        </div> */}
       </Container>
     </Section>
   );
