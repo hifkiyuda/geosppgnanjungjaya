@@ -5,8 +5,8 @@ import { Hyp } from "../Hyp";
 export const Footer = () => {
   return (
     <footer>
-      <Container className="flex items-center justify-between">
-        <div>
+      <Container className="flex flex-col sm:flex-row sm:items-center space-y-1.5 sm:space-y-0 justify-between">
+        <div className="space-y-1.5">
           <a
             href="https://www.instagram.com/sppgnanjungjaya1/"
             target="_blank"
