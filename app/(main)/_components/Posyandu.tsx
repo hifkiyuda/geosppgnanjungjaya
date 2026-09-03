@@ -51,7 +51,9 @@ export const Posyandu = () => {
                 <TableCell>{item.bumil}</TableCell>
                 <TableCell>{item.busui}</TableCell>
                 <TableCell>1</TableCell>
-                <TableCell>{item.balita + item.bumil + item.busui}</TableCell>
+                <TableCell>
+                  {item.balita + item.bumil + item.busui + 1}
+                </TableCell>
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
             ))}

@@ -60,7 +60,7 @@ export const Sekolah = () => {
                 <TableCell>{item.pk}</TableCell>
                 <TableCell>{item.pb + item.guru}</TableCell>
                 <TableCell>1</TableCell>
-                <TableCell>{item.total_pm + item.guru}</TableCell>
+                <TableCell>{item.total_pm + item.guru + 1}</TableCell>
                 <TableCell>{item.alamat}</TableCell>
               </TableRow>
             ))}
